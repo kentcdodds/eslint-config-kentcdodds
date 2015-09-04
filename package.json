@@ -1,0 +1,52 @@
+{
+  "name": "eslint-config-kentcdodds",
+  "version": "0.0.0-semantically-released",
+  "description": "ESLint rules according to kentcdodds' personal preference",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "eslint index.js test-angular.js test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "kentcdodds",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
+  },
+  "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
+  "peerDependencies": {
+    "eslint": "^1.0.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^4.1.1",
+    "eslint-plugin-mocha": "~0.5.1"
+  },
+  "devDependencies": {
+    "commitizen": "1.0.4",
+    "cz-conventional-changelog": "1.1.0",
+    "eslint": "1.3.1",
+    "ghooks": "0.3.2",
+    "semantic-release": "^4.3.4",
+    "validate-commit-msg": "1.0.0"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "./node_modules/.bin/validate-commit-msg && npm test"
+    }
+  }
+}
