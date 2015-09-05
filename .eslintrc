@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint",
   "extends": "kentcdodds",
   "rules": {
     "quotes": [2, "double"], // because I may want to move this config to an .eslintrc eventually...
