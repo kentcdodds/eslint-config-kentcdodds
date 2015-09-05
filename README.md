@@ -12,11 +12,14 @@ ESLint rules for all of my personal projects. Feel free to use these conventions
 
 ## Usage
 
-Install the conventions by running: 
+Install the conventions by running:
 
 ```
-npm install --save-dev eslint-config-kentcdodds
+npm install --save-dev eslint eslint-config-kentcdodds eslint-plugin-mocha
 ```
+
+*see the `peerDependencies` in the [`package.json`](package.json) to see the version of dependencies you need in your
+project*
 
 Then add the extends to your `.eslintrc`:
 

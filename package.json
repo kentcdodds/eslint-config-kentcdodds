@@ -27,10 +27,8 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "peerDependencies": {
-    "eslint": "^1.0.0"
-  },
-  "dependencies": {
-    "eslint-plugin-mocha": "~0.5.1"
+    "eslint": "^1.0.0",
+    "eslint-plugin-mocha": "^0.5.1"
   },
   "devDependencies": {
     "commitizen": "1.0.4",
