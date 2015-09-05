@@ -5,6 +5,9 @@ cache:
     - node_modules
 notifications:
   email: false
+branches:
+  only:
+    - master
 node_js:
   - iojs
 before_install:
