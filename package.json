@@ -30,7 +30,6 @@
     "eslint": "^1.0.0"
   },
   "dependencies": {
-    "babel-eslint": "^4.1.1",
     "eslint-plugin-mocha": "~0.5.1"
   },
   "devDependencies": {

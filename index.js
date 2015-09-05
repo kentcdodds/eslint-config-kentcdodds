@@ -1,5 +1,4 @@
 module.exports = {
-  "parser": "babel-eslint",
   "rules": {
     "quotes": [2, "single", "avoid-escape"],
     "no-use-before-define": [2, "nofunc"],
