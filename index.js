@@ -6,9 +6,9 @@ module.exports = {
     "strict": 0,
     "new-cap": [2, {
       "newIsCap": true,
-      "capIsNew": true
+      "capIsNew": true,
     }],
-    "comma-dangle": 0,
+    "comma-dangle": [2, "always-multiline"],
     "max-statements": [2, 30],
     "max-len": [2, 120, 2],
     "max-depth": [2, 4],
@@ -161,17 +161,17 @@ module.exports = {
     "object-shorthand": [2, "properties"], // methods are optional so you can specify a name if you want
     "max-params": [2, 5],
     "no-bitwise": 2,
-    "no-plusplus": 0
+    "no-plusplus": 0,
   },
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
   },
   "ecmaFeatures": {
-    "modules": true
+    "modules": true,
   },
   "globals": {
-  }
-};
+  },
+}
 

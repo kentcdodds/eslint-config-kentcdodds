@@ -7,6 +7,7 @@ module.exports = {
     "element": false,
     "by": false,
     "browser": false,
-    "protractor": false
-  }
-};
+    "protractor": false,
+  },
+}
+
