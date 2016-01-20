@@ -27,23 +27,23 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "peerDependencies": {
-    "eslint": "^1.0.0",
-    "eslint-plugin-mocha": "^0.5.1 || ^1.0.0"
+    "eslint": "^1.0.0"
   },
   "devDependencies": {
-    "commitizen": "1.0.5",
-    "cz-conventional-changelog": "1.1.2",
-    "eslint": "1.6.0",
-    "ghooks": "0.3.2",
+    "commitizen": "2.5.0",
+    "cz-conventional-changelog": "1.1.5",
+    "eslint": "1.10.3",
+    "ghooks": "1.0.3",
     "semantic-release": "4.3.5",
-    "validate-commit-msg": "1.0.0"
-  },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+    "validate-commit-msg": "1.1.1"
   },
   "config": {
     "ghooks": {
-      "commit-msg": "./node_modules/.bin/validate-commit-msg && npm test"
+      "commit-msg": "validate-commit-msg",
+      "pre-commit": "npm t"
+    },
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }

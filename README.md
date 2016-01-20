@@ -34,6 +34,8 @@ Then add the extends to your `.eslintrc`:
 
 This config lib also includes a `test` and a `test-angular` config:
 
+**Note if you use these, you need `eslint-plugin-mocha`** 
+
 ```javascript
 {
   "extends": "kentcdodds/test"
