@@ -15,11 +15,8 @@ ESLint rules for all of my personal projects. Feel free to use these conventions
 Install the conventions by running:
 
 ```
-npm install --save-dev eslint eslint-config-kentcdodds eslint-plugin-mocha
+npm install --save-dev eslint eslint-config-kentcdodds
 ```
-
-*see the `peerDependencies` in the [`package.json`](package.json) to see the version of dependencies you need in your
-project*
 
 Then add the extends to your `.eslintrc`:
 
@@ -31,6 +28,8 @@ Then add the extends to your `.eslintrc`:
   }
 }
 ```
+
+### Test and test-angular
 
 This config lib also includes a `test` and a `test-angular` config:
 
@@ -45,6 +44,18 @@ This config lib also includes a `test` and a `test-angular` config:
 ```javascript
 {
   "extends": "kentcdodds/test-angular"
+}
+```
+
+### React
+
+This config lib also includes a `react` config:
+
+**Note if you use this, you'll also need `eslint-plugin-react`**:
+
+```javascript
+{
+  "extends": "kentcdodds/react"
 }
 ```
 

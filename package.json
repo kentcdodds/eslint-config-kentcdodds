@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "eslint index.js test-angular.js test.js",
+    "test": "eslint .",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -33,6 +33,7 @@
     "commitizen": "2.5.0",
     "cz-conventional-changelog": "1.1.5",
     "eslint": "1.10.3",
+    "eslint-plugin-react": "3.16.1",
     "ghooks": "1.0.3",
     "semantic-release": "4.3.5",
     "validate-commit-msg": "1.1.1"

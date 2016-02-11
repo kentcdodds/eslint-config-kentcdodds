@@ -169,6 +169,7 @@ module.exports = {
     "node": true,
   },
   "ecmaFeatures": {
+    "experimentalObjectRestSpread": true,
     "modules": true,
   },
   "globals": {
