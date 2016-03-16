@@ -31,14 +31,14 @@
     "eslint": "^2.0.0"
   },
   "devDependencies": {
-    "commitizen": "2.5.0",
+    "commitizen": "2.7.2",
     "cz-conventional-changelog": "1.1.5",
     "eslint": "2.4.0",
     "eslint-find-new-rules": "1.0.0",
-    "eslint-plugin-react": "3.16.1",
+    "eslint-plugin-react": "4.2.3",
     "ghooks": "1.0.3",
     "semantic-release": "4.3.5",
-    "validate-commit-msg": "1.1.1"
+    "validate-commit-msg": "2.4.0"
   },
   "config": {
     "ghooks": {
@@ -46,7 +46,7 @@
       "pre-commit": "npm t"
     },
     "commitizen": {
-      "path": "node_modules/cz-conventional-changelog"
+      "path": "./node_modules/cz-conventional-changelog"
     }
   }
 }
