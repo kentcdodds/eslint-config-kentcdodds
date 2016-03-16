@@ -122,6 +122,7 @@ module.exports = {
     "func-names": 2,
     "func-style": [2, "declaration"],
     "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
+    "keyword-spacing": [2, {"before": true, "after": true}],
     "lines-around-comment": 0,
     "linebreak-style": [2, "unix"],
     "new-parens": 2,
@@ -147,11 +148,9 @@ module.exports = {
     "semi-spacing": [2, {"before": false, "after": true}],
     "semi": [2, "never"],
     "sort-vars": 0,
-    "space-after-keywords": [2, "always"],
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, "never"],
     "space-in-parens": [2, "never"],
-    "space-return-throw-case": 2,
     "space-unary-ops": [2, {"words": true, "nonwords": false}],
     "spaced-comment": 0,
     "wrap-regex": 0,
@@ -168,9 +167,12 @@ module.exports = {
     "es6": true,
     "node": true,
   },
-  "ecmaFeatures": {
-    "experimentalObjectRestSpread": true,
-    "modules": true,
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+    },
   },
   "globals": {
   },
