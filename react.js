@@ -3,8 +3,10 @@ module.exports = {
   "env": {
     "browser": true,
   },
-  "ecmaFeatures": {
-    "jsx": true,
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+    },
   },
   "plugins": ["react"],
   "rules": {
