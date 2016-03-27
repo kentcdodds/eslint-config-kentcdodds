@@ -11,7 +11,7 @@ module.exports = {
   "plugins": ["react"],
   "rules": {
     "jsx-quotes": [2, "prefer-double"],
-    "react/display-name": 2,
+    "react/display-name": [2, {"ignoreTranspilerName": false}],
     "react/forbid-prop-types": 0,
     "react/jsx-boolean-value": 0,
     "react/jsx-closing-bracket-location": 2,
