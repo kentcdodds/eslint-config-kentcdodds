@@ -28,13 +28,16 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "peerDependencies": {
-    "eslint": "^2.0.0"
+    "eslint": "^2.0.0",
+    "eslint-plugin-import": "1.4.0"
   },
   "devDependencies": {
+    "babel-eslint": "6.0.2",
     "commitizen": "2.7.2",
     "cz-conventional-changelog": "1.1.5",
     "eslint": "2.4.0",
     "eslint-find-new-rules": "1.0.0",
+    "eslint-import-resolver-webpack": "0.2.0",
     "eslint-plugin-react": "4.2.3",
     "ghooks": "1.0.3",
     "semantic-release": "4.3.5",

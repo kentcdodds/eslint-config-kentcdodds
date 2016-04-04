@@ -1,5 +1,5 @@
 module.exports = {
-  "extends": "./index.js",
+  "extends": "./es-next.js",
   "env": {
     "browser": true,
   },
@@ -41,4 +41,3 @@ module.exports = {
     "react/wrap-multilines": 2,
   },
 }
-

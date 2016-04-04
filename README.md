@@ -33,7 +33,7 @@ Then add the extends to your `.eslintrc`:
 
 This config lib also includes a `test` and a `test-angular` config:
 
-**Note if you use these, you need `eslint-plugin-mocha`** 
+**Note if you use these, you need to install `eslint-plugin-mocha`**
 
 ```javascript
 {
@@ -51,7 +51,7 @@ This config lib also includes a `test` and a `test-angular` config:
 
 This config lib also includes a `react` config:
 
-**Note if you use this, you'll also need `eslint-plugin-react`**:
+**Note if you use this, you'll also need to install `eslint-plugin-react`**:
 
 ```javascript
 {
@@ -59,7 +59,33 @@ This config lib also includes a `react` config:
 }
 ```
 
+### ES.next
+
+If you want to use ES.next goodness, you can reference the `es-next` config:
+
+**Note if you use this, you'll also need to install `babel-eslint`**:
+
+```javascript
+{
+  "extends": "kentcdodds/es-next"
+}
+```
+
+### webpack
+
+We lint your import/require statements. With webpack overloading these, you may
+want to have these resolved the way webpack resolves them for you.
+
+**Note if you use this, you'll also need to install `eslint-import-resolver-webpack`**:
+
+```javascript
+{
+  "extends": ["kentcdodds", "kentcdodds/webpack"]
+}
+```
+
+
+
 ## LICENSE
 
 MIT
-
