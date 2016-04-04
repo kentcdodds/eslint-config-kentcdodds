@@ -27,9 +27,11 @@
     "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
-  "peerDependencies": {
-    "eslint": "^2.0.0",
+  "dependencies": {
     "eslint-plugin-import": "1.4.0"
+  },
+  "peerDependencies": {
+    "eslint": "^2.0.0"
   },
   "devDependencies": {
     "babel-eslint": "6.0.2",
