@@ -53,13 +53,15 @@ This config lib also includes a `react` config:
 
 **Note if you use this, you'll also need to install `eslint-plugin-react`**:
 
+This extends `es-next` which has requirements as well
+
 ```javascript
 {
   "extends": "kentcdodds/react"
 }
 ```
 
-### ES.next
+### es-next
 
 If you want to use ES.next goodness, you can reference the `es-next` config:
 
