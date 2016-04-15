@@ -3,7 +3,7 @@ module.exports = {
     "import",
   ],
   "rules": {
-    "quotes": [2, "single", "avoid-escape"],
+    "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
     "no-use-before-define": [2, "nofunc"],
     "no-unused-expressions": 0,
     "strict": 0,
