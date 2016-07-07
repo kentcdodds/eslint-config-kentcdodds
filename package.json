@@ -5,8 +5,13 @@
   "main": "index.js",
   "scripts": {
     "commit": "git-cz",
-    "test": "eslint .",
-    "find-new-rules": "eslint-find-rules --option",
+    "lint": "eslint .",
+    "test": "npm-run-all --parallel lint find-new-rules",
+    "find-new-rules": "npm-run-all --parallel find-new-rules:*",
+    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
+    "find-new-rules:react": "eslint-find-rules --unused ./react.js",
+    "find-new-rules:mocha": "eslint-find-rules --unused ./mocha.js",
+    "find-new-rules:ava": "eslint-find-rules --unused ./ava.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
@@ -28,21 +33,23 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
-    "eslint-plugin-import": "^1.6.1"
+    "eslint-import-resolver-webpack": "^0.3.2",
+    "eslint-plugin-ava": "2.5.0",
+    "eslint-plugin-import": "^1.6.1",
+    "eslint-plugin-mocha": "^4.0.0",
+    "eslint-plugin-react": "^5.2.2"
   },
   "peerDependencies": {
-    "eslint": "^2.8.0"
+    "eslint": "^3.0.1"
   },
   "devDependencies": {
-    "babel-eslint": "6.0.4",
-    "commitizen": "2.8.1",
+    "commitizen": "2.8.2",
     "cz-conventional-changelog": "1.1.6",
-    "eslint": "2.8.0",
-    "eslint-find-new-rules": "2.0.1",
-    "eslint-find-rules": "1.7.0",
-    "eslint-import-resolver-webpack": "0.2.3",
-    "eslint-plugin-react": "5.0.1",
-    "ghooks": "1.2.1",
+    "eslint": "3.0.1",
+    "eslint-find-rules": "1.11.0",
+    "eslint-plugin-mocha": "4.0.0",
+    "ghooks": "1.3.2",
+    "npm-run-all": "2.3.0",
     "semantic-release": "4.3.5",
     "validate-commit-msg": "2.6.1"
   },

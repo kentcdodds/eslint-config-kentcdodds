@@ -3,5 +3,6 @@
   "rules": {
     "quotes": [2, "double"], // because I may want to move this config to an .eslintrc eventually...
     "quote-props": 0, // same reason...
+    "no-magic-numbers": 0, // because rules are 0, 1, 2
   }
 }

@@ -6,9 +6,7 @@
 [![MIT License](https://img.shields.io/npm/l/eslint-config-kentcdodds.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 
-
 ESLint rules for all of my personal projects. Feel free to use these conventions :-)
-
 
 ## Usage
 
@@ -29,21 +27,23 @@ Then add the extends to your `.eslintrc`:
 }
 ```
 
-### Test and test-angular
+### Mocha
 
-This config lib also includes a `test` and a `test-angular` config:
-
-**Note if you use these, you need to install `eslint-plugin-mocha`**
+This config lib also includes a [`mocha`](https://mochajs.org/) config
 
 ```javascript
 {
-  "extends": "kentcdodds/test"
+  "extends": "kentcdodds/mocha"
 }
 ```
 
+### AVA
+
+This config lib also includes an [`AVA`](https://github.com/avajs/ava) config
+
 ```javascript
 {
-  "extends": "kentcdodds/test-angular"
+  "extends": "kentcdodds/ava"
 }
 ```
 
@@ -51,38 +51,20 @@ This config lib also includes a `test` and a `test-angular` config:
 
 This config lib also includes a `react` config:
 
-**Note if you use this, you'll also need to install `eslint-plugin-react`**:
-
-This extends `es-next` which has requirements as well
-
 ```javascript
 {
   "extends": "kentcdodds/react"
 }
 ```
 
-### es-next
-
-If you want to use ES.next goodness, you can reference the `es-next` config:
-
-**Note if you use this, you'll also need to install `babel-eslint`**:
-
-```javascript
-{
-  "extends": "kentcdodds/es-next"
-}
-```
-
-### webpack
+### Webpack
 
 We lint your import/require statements. With webpack overloading these, you may
 want to have these resolved the way webpack resolves them for you.
 
-**Note if you use this, you'll also need to install `eslint-import-resolver-webpack`**:
-
 ```javascript
 {
-  "extends": ["kentcdodds", "kentcdodds/webpack"]
+  "extends": "kentcdodds/webpack"
 }
 ```
 
