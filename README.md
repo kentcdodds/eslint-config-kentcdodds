@@ -27,48 +27,39 @@ Then add the extends to your `.eslintrc`:
 }
 ```
 
-### Mocha
+### Other configs
 
-This config lib also includes a [`mocha`](https://mochajs.org/) config
+This config also exposes a few other configs that I use often and pull in as needed.
 
-```javascript
-{
-  "extends": "kentcdodds/mocha"
-}
-```
-
-### AVA
-
-This config lib also includes an [`AVA`](https://github.com/avajs/ava) config
+You can use them standalone:
 
 ```javascript
 {
-  "extends": "kentcdodds/ava"
+  "extends": "kentcdodds/<config-name>"
 }
 ```
 
-### React
-
-This config lib also includes a `react` config:
+Or in combination with the base config (recommended)
 
 ```javascript
 {
-  "extends": "kentcdodds/react"
+  "extends": ["kentcdodds", "kentcdodds/<config-name>"]
 }
 ```
 
-### Webpack
-
-We lint your import/require statements. With webpack overloading these, you may
-want to have these resolved the way webpack resolves them for you.
-
-```javascript
-{
-  "extends": "kentcdodds/webpack"
-}
-```
+- `ava`: [AVA](https://npmjs.com/package/ava) testing framework
+- `babel-module-alias`: [babel-plugin-module-alias](https://www.npmjs.com/package/babel-plugin-module-alias) for the import plugin to work with the module-alias babel plugin
+- `babel-react-require`: [babel-plugin-react-require](https://www.npmjs.com/package/babel-plugin-react-require) for when you're using the react-require babel plugin (should be used with `"kentcdodds/react"` as well).
+- `mocha`: [mocha](https://npmjs.com/package/mocha) testing framework
+- `react`: [React](https://www.npmjs.com/package/react) JS library
+- `webpack`: [Webpack](https://npmjs.com/package/webpack) for the import plugin to work with webpack overloaded imports/requires
 
 
+### Things to know
+
+- The base config uses `babel-eslint` to support stage features that ESLint doesn't support and it opts to use the `eslint-plugin-babel` rules over the ESLint rules to support rules for these features as well.
+- The base config assumes Babel. I would like to break some stuff out to a `common` config to share between the base config (`index`), an `es5` config and an `es6` config (which would exclude modules) so this could be used in non-babelified projects.
+- All plugins needed for rules used by these configs are dependencies of this module so you don't have to install anything on your own.
 
 ## LICENSE
 

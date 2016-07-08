@@ -1,5 +1,4 @@
 module.exports = {
-  "extends": "./index.js",
   "plugins": [
     "mocha",
   ],

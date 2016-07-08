@@ -1,16 +1,15 @@
 module.exports = {
+  "parser": "babel-eslint",
   "plugins": [
     "import",
+    "babel",
   ],
   "rules": {
     "quotes": [2, "single", {"avoidEscape": true, "allowTemplateLiterals": true}],
     "no-use-before-define": [2, "nofunc"],
     "no-unused-expressions": 0,
     "strict": 0,
-    "new-cap": [2, {
-      "newIsCap": true,
-      "capIsNew": true,
-    }],
+    "new-cap": 0, // set by babe/new-cap
     "comma-dangle": [2, "always-multiline"],
     "max-statements": [2, 30],
     "max-len": [2, 120, 2],
@@ -22,13 +21,14 @@ module.exports = {
 
     // possible errors
     "array-callback-return": 2,
-    "arrow-body-style": [2, "as-needed"],
-    "arrow-parens": [2, "as-needed"],
+    // This makes me think of how IfStatements should always have BlockStatements
+    "arrow-body-style": 0, // this is nice, but not useful all the time.
+    "arrow-parens": 0, // babel/arrow-parens
     "arrow-spacing": [2, {"before": true, "after": true}],
     "block-scoped-var": 2,
     "block-spacing": 2,
     "callback-return": 2,
-    "global-require": 2,
+    "global-require": 1, // sometimes this is ok. We shouldn't break a build
     "handle-callback-err": 2,
     "init-declarations": 0,
     "space-infix-ops": 2,
@@ -107,7 +107,7 @@ module.exports = {
     "no-label-var": 2,
     "no-lone-blocks": 2,
     "no-loop-func": 2,
-    "no-magic-numbers": 2,
+    "no-magic-numbers": 0, // sometimes this is ok (foo.length - 1 == index of last one)
     "no-mixed-operators": 0,
     "no-mixed-requires": 0,
     "no-multi-spaces": 2,
@@ -157,7 +157,7 @@ module.exports = {
     "no-unused-vars": [2, {"args": "after-used"}],
 
     // stylistic
-    "array-bracket-spacing": [2, "never"],
+    "array-bracket-spacing": 0, // babel/array-bracket-spacing
     "camelcase": [2, {"properties": "always"}],
     "comma-spacing": [2, {"before": false, "after": true}],
     "comma-style": [2, "last"],
@@ -167,8 +167,8 @@ module.exports = {
     "func-names": 2,
     "func-style": [2, "declaration"],
     "id-blacklist": 2,
-    "id-length": [2, {"properties": "never"}],
-    "id-match": [2, "^[a-z]+([A-Z][a-z]+)*$"], // matches camelCase
+    "id-length": 0, // when using short composable functions, using single-letter variables is fine
+    "id-match": [2, "^(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*$"], // camelCase, PascalCase, __filename, CONST_VALUE
     "jsx-quotes": [2, "prefer-double"],
     "key-spacing": [2, {"beforeColon": false, "afterColon": true}],
     "keyword-spacing": [2, {"before": true, "after": true}],
@@ -198,7 +198,7 @@ module.exports = {
     "no-trailing-spaces": [2, {"skipBlankLines": true}],
     "no-underscore-dangle": 0,
     "no-unneeded-ternary": 2,
-    "object-curly-spacing": [2, "never"],
+    "object-curly-spacing": 0, // babel/object-curly-spacing
     "object-curly-newline": 0, // couldn't figure out how to configure it the way I want :-(
     "object-property-newline": 0,
     "one-var": [2, {"uninitialized": "always", "initialized": "never"}],
@@ -226,9 +226,9 @@ module.exports = {
     "wrap-regex": 0,
     "yield-star-spacing": [2, {"before": false, "after": true}],
     "constructor-super": 2,
-    "generator-star-spacing": [2, {"before": false, "after": true}],
+    "generator-star-spacing": 0, // babel/generator-star-spacing
     "no-this-before-super": 2,
-    "object-shorthand": [2, "properties"], // methods are optional so you can specify a name if you want
+    "object-shorthand": 0, // babel/object-shorthand
     "max-params": [2, 5],
     "no-bitwise": 2,
     "no-plusplus": 0,
@@ -259,6 +259,23 @@ module.exports = {
     "import/no-restricted-paths": 0,
     "import/order": [1, {"groups": ["builtin", ["external", "internal"], "parent", ["sibling", "index"]]}],
     "import/prefer-default-export": 1,
+
+    // babel plugin
+    //   better than eslint's version
+    "babel/array-bracket-spacing": [2, "never"],
+    "babel/arrow-parens": [2, "as-needed"],
+    "babel/generator-star-spacing": [2, "after"],
+    "babel/object-curly-spacing": [2, "never"],
+    "babel/object-shorthand": [2, "properties"], // methods are optional so you can specify a name if you want
+    "babel/new-cap": [2, {
+      "newIsCap": true,
+      "capIsNew": true,
+    }],
+    //   no eslint version
+    "babel/flow-object-type": 0, // no opinion
+    "babel/func-params-comma-dangle": [2, "only-multiline"],
+    "babel/no-await-in-loop": 2, // I don't use async/await, but sounds like a good idea to have on.
+
   },
   "env": {
     "browser": true,
