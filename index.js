@@ -27,7 +27,7 @@ module.exports = {
     "arrow-spacing": [2, {"before": true, "after": true}],
     "block-scoped-var": 2,
     "block-spacing": 2,
-    "callback-return": 2,
+    "callback-return": 0, // see known limitations: http://eslint.org/docs/rules/callback-return it's just annoying...
     "global-require": 1, // sometimes this is ok. We shouldn't break a build
     "handle-callback-err": 2,
     "init-declarations": 0,
