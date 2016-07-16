@@ -50,6 +50,7 @@ Or in combination with the base config (recommended)
 - `ava`: [AVA](https://npmjs.com/package/ava) testing framework
 - `babel-module-alias`: [babel-plugin-module-alias](https://www.npmjs.com/package/babel-plugin-module-alias) for the import plugin to work with the module-alias babel plugin
 - `babel-react-require`: [babel-plugin-react-require](https://www.npmjs.com/package/babel-plugin-react-require) for when you're using the react-require babel plugin (should be used with `"kentcdodds/react"` as well).
+- `jsx-a11y`: [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) for rules regarding accessibility with JSX.
 - `mocha`: [mocha](https://npmjs.com/package/mocha) testing framework
 - `react`: [React](https://www.npmjs.com/package/react) JS library
 - `webpack`: [Webpack](https://npmjs.com/package/webpack) for the import plugin to work with webpack overloaded imports/requires

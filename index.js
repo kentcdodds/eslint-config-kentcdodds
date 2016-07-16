@@ -176,6 +176,7 @@ module.exports = {
     "linebreak-style": [2, "unix"],
     "max-lines": [2, {"max": 500, "skipBlankLines": false, "skipComments": false}],
     "max-statements-per-line": [2, {"max": 1}],
+    "multiline-ternary": 0,
     "new-parens": 2,
     "newline-after-var": 0,
     "newline-before-return": 0,
