@@ -32,7 +32,7 @@ module.exports = {
     "react/jsx-sort-prop-types": 0,
     "react/jsx-sort-props": 0,
     "react/jsx-space-before-closing": [2, "always"],
-    "react/jsx-uses-react": 0,
+    "react/jsx-uses-react": 2,
     "react/jsx-uses-vars": 2,
     "react/no-comment-textnodes": 2,
     "react/no-danger": 0,
