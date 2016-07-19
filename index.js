@@ -276,7 +276,13 @@ module.exports = {
     "babel/flow-object-type": 0, // no opinion
     "babel/func-params-comma-dangle": [2, "only-multiline"],
     "babel/no-await-in-loop": 2, // I don't use async/await, but sounds like a good idea to have on.
-
+  },
+  "settings": {
+    "import/ignore": [
+      "node_modules",
+      "\.json$",
+      "\.(scss|less|css|styl)$",
+    ],
   },
   "env": {
     "browser": true,
