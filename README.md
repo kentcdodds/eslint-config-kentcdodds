@@ -55,12 +55,24 @@ Or in combination with the base config (recommended)
 - `react`: [React](https://www.npmjs.com/package/react) JS library
 - `webpack`: [Webpack](https://npmjs.com/package/webpack) for the import plugin to work with webpack overloaded imports/requires
 
-
 ### Things to know
 
-- The base config uses `babel-eslint` to support stage features that ESLint doesn't support and it opts to use the `eslint-plugin-babel` rules over the ESLint rules to support rules for these features as well.
-- The base config assumes Babel. I would like to break some stuff out to a `common` config to share between the base config (`index`), an `es5` config and an `es6` config (which would exclude modules) so this could be used in non-babelified projects.
+- The default config uses `babel-eslint` to support stage features that ESLint doesn't support and it opts to use the `eslint-plugin-babel` rules over the ESLint rules to support rules for these features as well.
 - All plugins needed for rules used by these configs are dependencies of this module so you don't have to install anything on your own.
+- The default config actually is composed of several configurations and you can use those individually. These are the configs it's using: `possible-errors.js`, `best-practices.js`, `stylistic.js`, `es6/index.js`, and `import/index.js`. You can use each of these configs yourself if you want to leave my own personal style out of it. Also, the `es6` and `import` configs each have a `possible-errors.js`, `best-practices.js`, and `stylistic.js` which they are composed of as well.
+
+#### Example of highly customized config
+
+```javascript
+{
+  "extends": [
+    "kentcdodds/possible-errors", "kentcdodds/best-practices",
+    "kentcdodds/es6/possible-errors", "kentcdodds/import",
+    "kentcdodds/mocha"
+  ],
+  "rules": { /* custom rules */ }
+}
+```
 
 ## LICENSE
 
