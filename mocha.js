@@ -9,8 +9,10 @@ module.exports = {
     "mocha/handle-done-callback": 2, // don't forget that "done" !
     "mocha/no-exclusive-tests": 2, // never push exclusive tests
     "mocha/no-global-tests": 0,
+    "mocha/no-hooks": 2, // these are a bad idea...
     "mocha/no-mocha-arrows": 0,
     "mocha/no-pending-tests": 0,
+    "mocha/no-sibling-hooks": 2,
     "mocha/no-skipped-tests": 0,
     "mocha/no-synchronous-tests": 0,
     "mocha/valid-suite-description": 0,
