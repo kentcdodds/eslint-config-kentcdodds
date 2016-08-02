@@ -30,5 +30,5 @@ module.exports = {
     "jsx-a11y/role-supports-aria-props": 2,
     "jsx-a11y/scope": 2,
     "jsx-a11y/tabindex-no-positive": 1,
-  }
+  },
 }

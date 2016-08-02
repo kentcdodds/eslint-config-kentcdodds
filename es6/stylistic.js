@@ -7,7 +7,7 @@ module.exports = {
     "rest-spread-spacing": [2, "never"],
     "sort-imports": 0,
     "template-curly-spacing": [2, "never"],
-    "yield-star-spacing": [2, {"before": false, "after": true }],
+    "yield-star-spacing": [2, {"before": false, "after": true}],
 
     // babel plugin
     //   better than eslint's version

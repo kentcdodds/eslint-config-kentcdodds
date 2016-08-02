@@ -1,5 +1,5 @@
 {
-  "extends": "./react.js", // because this extends the base and has most of the rules I care about
+  "extends": ["./index.js"], // because this extends the base and has most of the rules I care about
   "rules": {
     "quotes": [2, "double"], // because I may want to move this config to an .eslintrc eventually...
     "quote-props": 0, // same reason...

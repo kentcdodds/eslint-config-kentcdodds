@@ -13,8 +13,8 @@ module.exports = {
   "settings": {
     "import/ignore": [
       "node_modules",
-      "\.json$",
-      "\.(scss|less|css|styl)$",
+      ".json$",
+      ".(scss|less|css|styl)$",
     ],
   },
 }
