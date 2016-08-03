@@ -23,7 +23,7 @@ module.exports = {
     "react/jsx-indent-props": [2, 2],
     "react/jsx-key": 2,
     "react/jsx-max-props-per-line": [1, {"maximum": 2}],
-    "react/jsx-no-bind": [1, {"ignoreRefs": true}], // this was going to be a 0, but let's try this out.
+    "react/jsx-no-bind": 0,
     "react/jsx-no-comment-textnodes": 2,
     "react/jsx-no-duplicate-props": 2,
     "react/jsx-no-literals": 0,
