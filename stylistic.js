@@ -14,6 +14,7 @@ module.exports = {
     "computed-property-spacing": [2, "never"],
     "consistent-this": 0, // Too many use-cases for reassigning "this" to different values
     "eol-last": 2,
+    "func-call-spacing": [2, "never"],
     "func-names": 2,
     "func-style": [2, "declaration"],
     "id-blacklist": 2,
@@ -70,6 +71,7 @@ module.exports = {
     "require-jsdoc": 0,
     "semi-spacing": [2, {"before": false, "after": true}],
     "semi": [2, "never"],
+    "sort-keys": 0,
     "sort-vars": 0,
     "space-before-blocks": [2, "always"],
     "space-before-function-paren": [2, "never"],
