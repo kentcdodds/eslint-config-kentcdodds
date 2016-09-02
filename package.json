@@ -12,6 +12,7 @@
     "find-new-rules:babel-module": "eslint-find-rules --unused ./other/test/babel-module.js",
     "disabled:find-new-rules:babel-react-require": "eslint-find-rules --unused ./other/test/babel-react-require.js",
     "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y.js",
+    "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:mocha": "eslint-find-rules --unused ./other/test/mocha.js",
     "disabled:find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
