@@ -51,11 +51,10 @@ Or in combination with the base config (recommended)
 installed to make things work. I recommend adding them as dependencies to your project
 if you're going to use the config for it.
 
-- `ava`: [AVA](https://npmjs.com/package/ava) testing framework (_eslint-plugin-ava_)
 - `babel-module`: [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver) for the import plugin to work with the module-resolver babel plugin (_eslint-plugin-import_ and _eslint-import-resolver-babel-module_)
 - `babel-react-require`: [babel-plugin-react-require](https://www.npmjs.com/package/babel-plugin-react-require) for when you're using the react-require babel plugin (should be used with `"kentcdodds/react"` as well) (_eslint-plugin-react_)
+- `jest`: [jest](http://facebook.github.io/jest/) testing framework
 - `jsx-a11y`: [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y) for rules regarding accessibility with JSX (_eslint-plugin-jsx-a11y_)
-- `mocha`: [mocha](https://npmjs.com/package/mocha) testing framework (_eslint-plugin-mocha_)
 - `react`: [React](https://www.npmjs.com/package/react) JS library  (_eslint-plugin-react_)
 - `webpack`: [Webpack](https://npmjs.com/package/webpack) for the import plugin to work with webpack overloaded imports/requires (_eslint-plugin-import_ and _eslint-import-resolver-webpack_)
 
@@ -72,7 +71,7 @@ if you're going to use the config for it.
   "extends": [
     "kentcdodds/possible-errors", "kentcdodds/best-practices",
     "kentcdodds/es6/possible-errors", "kentcdodds/import",
-    "kentcdodds/mocha"
+    "kentcdodds/jest"
   ],
   "rules": { /* custom rules */ }
 }

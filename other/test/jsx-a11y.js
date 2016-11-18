@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": ["../../index.js", "../../jsx-a11y.js"],
+  extends: ['../../index.js', '../../jsx-a11y.js'],
 }

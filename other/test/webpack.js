@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": ["../../index.js", "../../webpack.js"],
+  extends: ['../../index.js', '../../webpack.js'],
 }

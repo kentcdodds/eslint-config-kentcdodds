@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": ["../../index.js", "../../jest.js"],
+  extends: ['../../index.js', '../../jest.js'],
 }

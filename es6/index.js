@@ -1,9 +1,9 @@
 module.exports = {
-  "extends": [
-    "./non-rules-config.js",
-    "./stylistic.js",
-    "./best-practices.js",
-    "./possible-errors.js",
+  extends: [
+    './non-rules-config.js',
+    './stylistic.js',
+    './best-practices.js',
+    './possible-errors.js',
   ],
-  "rules": {},
+  rules: {},
 }

@@ -1,3 +1,3 @@
 module.exports = {
-  "extends": ["../../index.js", "../../babel-module.js"],
+  extends: ['../../index.js', '../../babel-module.js'],
 }
