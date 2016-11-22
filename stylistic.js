@@ -29,7 +29,11 @@ module.exports = {
     'id-blacklist': 2,
     'init-declarations': 0,
     'id-length': 0, // when using short composable functions, using single-letter variables is fine
-    'id-match': [2, '^(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*$'], // camelCase, PascalCase, __filename, CONST_VALUE
+    'id-match': [
+      2,
+      // camelCase, PascalCase, __filename, CONST_VALUE, stream$, $el
+      '^\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\$?$',
+    ],
     indent: [2, 2, {SwitchCase: 1}],
     'jsx-quotes': [2, 'prefer-double'],
     'key-spacing': [2, {beforeColon: false, afterColon: true}],
