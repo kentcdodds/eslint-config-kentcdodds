@@ -69,7 +69,9 @@ module.exports = {
     'no-void': 2,
     'no-warning-comments': [2, {terms: ['fixme'], location: 'anywhere'}],
     'no-with': 0,
+    'prefer-promise-reject-errors': 0, // maybe one day... Not sure I'm in...
     radix: 2,
+    'require-await': 2, // if you don't need async, don't use async or return Promise.resolve...
     'vars-on-top': 2,
     'wrap-iife': [2, 'inside'],
     yoda: 2,

@@ -13,14 +13,20 @@ module.exports = {
     'object-curly-spacing': 0,
     'babel/object-curly-spacing': [2, 'never'],
 
+    semi: 0,
+    'babel/semi': [2, 'never'],
+
     'no-invalid-this': 0,
     'babel/no-invalid-this': 2,
 
     'new-cap': 0,
-    'babel/new-cap': [2, {
-      newIsCap: true,
-      capIsNew: true,
-    }],
+    'babel/new-cap': [
+      2,
+      {
+        newIsCap: true,
+        capIsNew: true,
+      },
+    ],
 
     //   no eslint version
     'babel/flow-object-type': 0, // no opinion

@@ -1,7 +1,7 @@
 module.exports = {
   extends: './non-rules-config.js',
   rules: {
-    'class-methods-use-this': 1, // we'll see how this one goes...
+    'class-methods-use-this': 0, // three words: "componentDidMount" :)
     'no-class-assign': 2,
     'no-confusing-arrow': [2, {allowParens: true}],
     'no-duplicate-imports': 2,

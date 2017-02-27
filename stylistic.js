@@ -9,13 +9,17 @@ module.exports = {
     'block-spacing': 2,
     'brace-style': [2, '1tbs'],
     camelcase: [2, {properties: 'always'}],
-    'comma-dangle': [2, {
-      arrays: 'always-multiline',
-      objects: 'always-multiline',
-      imports: 'always-multiline',
-      exports: 'always-multiline',
-      functions: 'always-multiline',
-    }],
+    'capitalized-comments': 0, // wHO CaRes?
+    'comma-dangle': [
+      2,
+      {
+        arrays: 'always-multiline',
+        objects: 'always-multiline',
+        imports: 'always-multiline',
+        exports: 'always-multiline',
+        functions: 'always-multiline',
+      },
+    ],
     'comma-spacing': [2, {before: false, after: true}],
     'comma-style': [2, 'last'],
     'computed-property-spacing': [2, 'never'],
@@ -61,6 +65,7 @@ module.exports = {
     'no-inline-comments': 0,
     'no-lonely-if': 2,
     'no-mixed-spaces-and-tabs': 2,
+    'no-multi-assign': 2, // it's handy, but harder to read
     'no-multiple-empty-lines': 0,
     'no-negated-condition': 2,
     'no-nested-ternary': 2,
@@ -82,9 +87,11 @@ module.exports = {
     'operator-assignment': 0, // readability on a case-by-case basis
     'operator-linebreak': [2, 'after'],
     'padded-blocks': 0,
+    'prefer-destructuring': 0, // nah, I like it, but not that much...
     quotes: [2, 'single', {avoidEscape: true, allowTemplateLiterals: true}],
     'quote-props': [2, 'as-needed'],
     'require-jsdoc': 0,
+    'template-tag-spacing': [2, 'never'],
     'semi-spacing': [2, {before: false, after: true}],
     semi: [2, 'never'],
     'sort-keys': 0,
