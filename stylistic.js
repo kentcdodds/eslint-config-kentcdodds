@@ -78,6 +78,7 @@ module.exports = {
     'no-underscore-dangle': 0,
     'no-unneeded-ternary': 2,
     'no-whitespace-before-property': 2,
+    'nonblock-statement-body-position': 0,
     'object-curly-newline': 0, // couldn't figure out how to configure it the way I want :-(
     'object-curly-spacing': 0, // babel/object-curly-spacing
     'object-property-newline': 0,

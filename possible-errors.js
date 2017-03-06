@@ -8,6 +8,7 @@ module.exports = {
     'no-console': 2,
     'no-constant-condition': 2,
     'no-control-regex': 2,
+    'no-compare-neg-zero': 2,
     'no-debugger': 2,
     'no-dupe-args': 2,
     'no-dupe-keys': 2,

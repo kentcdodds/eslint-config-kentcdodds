@@ -23,6 +23,6 @@ module.exports = {
 
     // babel plugin
     //   no eslint version
-    'babel/no-await-in-loop': 2, // I don't use async/await, but sounds like a good idea to have on.
+    'babel/no-await-in-loop': 0, // this is deprecated
   },
 }
