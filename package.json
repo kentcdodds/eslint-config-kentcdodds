@@ -42,7 +42,7 @@
     "babel-plugin-module-resolver": "^2.5.0",
     "eslint-import-resolver-babel-module": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.8.1",
-    "eslint-plugin-babel": "^4.1.0",
+    "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jest": "^19.0.1",
     "eslint-plugin-jsx-a11y": "^4.0.0",
@@ -50,16 +50,16 @@
     "webpack": "^2.2.1"
   },
   "peerDependencies": {
-    "eslint": "^3.10.2"
+    "eslint": "^3.17.0"
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^3.16.1",
+    "eslint": "^3.17.0",
     "eslint-find-rules": "^1.14.3",
-    "husky": "^0.13.1",
+    "husky": "^0.13.2",
     "npm-run-all": "^4.0.2",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "^6.3.6",
     "validate-commit-msg": "^2.11.1"
   },
   "config": {
