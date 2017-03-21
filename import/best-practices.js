@@ -9,6 +9,7 @@ module.exports = {
     'import/no-deprecated': 1, // this is an in progress rule
     'import/no-duplicates': 2,
     'import/no-dynamic-require': 1, // sometimes it can be handy, shouldn't break a build
+    'global-require': 0, // disable because no need to have both!
     'import/no-internal-modules': 0,
     'import/no-mutable-exports': 2,
     'import/no-restricted-paths': 0,
