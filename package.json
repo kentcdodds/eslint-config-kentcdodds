@@ -13,7 +13,7 @@
     "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
-    "disabled:find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
+    "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
     "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack.js",
     "commitmsg": "validate-commit-msg",
     "precommit": "npm t",
