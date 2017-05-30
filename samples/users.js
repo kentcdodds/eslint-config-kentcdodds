@@ -1,4 +1,5 @@
-import React, {PropTypes} from 'react' // eslint-disable-line
+import React from 'react'
+import PropTypes from 'prop-types'
 
 export default Users
 
@@ -7,13 +8,11 @@ function Users({nameFilter}) {
     {name: 'Janice', friends: ['Albert', 'Nancy'], id: 23},
   ].filter(({name}) => name.toLowerCase().includes(nameFilter))
   return (
-    <div
-      className="user-list"
-      id="users-section"
-      data-test="users"
-    >
+    <div className="user-list" id="users-section" data-test="users">
       {users.map(user => (
-        <div key={user.id}>{user.name} is friends with {user.friends.join(', ')}</div>
+        <div key={user.id}>
+          {user.name} is friends with {user.friends.join(', ')}
+        </div>
       ))}
     </div>
   )
@@ -32,3 +31,9 @@ export function variableNames() {
   const CONST_VALUE = 'CONST_VALUE'
   return {$el, user$, camelCase, PascalCase, __thing, CONST_VALUE}
 }
+
+/*
+  eslint
+  import/no-extraneous-dependencies:0
+  import/no-unresolved:0
+ */
