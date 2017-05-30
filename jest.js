@@ -4,6 +4,7 @@ module.exports = {
     'jest/no-disabled-tests': 1,
     'jest/no-focused-tests': 2,
     'jest/no-identical-title': 2,
+    'jest/valid-expect': 2,
   },
   env: {
     'jest/globals': true,

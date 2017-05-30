@@ -38,30 +38,30 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
-    "babel-eslint": "^7.2.0",
-    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-module-resolver": "^2.7.1",
     "eslint-import-resolver-babel-module": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.8.1",
     "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jest": "^19.0.1",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.10.3",
-    "webpack": "^2.2.1"
+    "eslint-plugin-import": "^2.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "webpack": "^2.6.1"
   },
   "peerDependencies": {
     "eslint": "^3.17.0"
   },
   "devDependencies": {
-    "babel-core": "^6.24.0",
+    "babel-core": "^6.24.1",
     "commitizen": "^2.9.6",
     "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^3.17.0",
+    "eslint": "^3.19.0",
     "eslint-find-rules": "^1.14.3",
-    "husky": "^0.13.2",
+    "husky": "^0.13.4",
     "npm-run-all": "^4.0.2",
     "semantic-release": "^6.3.6",
-    "validate-commit-msg": "^2.11.2"
+    "validate-commit-msg": "^2.12.1"
   },
   "config": {
     "commitizen": {
