@@ -8,6 +8,8 @@
 
 ESLint rules for all of my personal projects. Feel free to use these conventions :-)
 
+<a href="https://app.codesponsor.io/link/PKGFLnhDiFvsUA5P4kAXfiPs/kentcdodds/eslint-config-kentcdodds" rel="nofollow"><img src="https://app.codesponsor.io/embed/PKGFLnhDiFvsUA5P4kAXfiPs/kentcdodds/eslint-config-kentcdodds.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+
 ## Usage
 
 Install the conventions by running:
