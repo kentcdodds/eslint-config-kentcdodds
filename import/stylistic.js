@@ -9,6 +9,16 @@ module.exports = {
     'import/no-named-default': 2,
     'import/no-namespace': 0,
     'import/no-nodejs-modules': 0,
-    'import/order': [1, {groups: ['builtin', ['external', 'internal'], 'parent', ['sibling', 'index']]}],
+    'import/order': [
+      1,
+      {
+        groups: [
+          'builtin',
+          ['external', 'internal'],
+          'parent',
+          ['sibling', 'index'],
+        ],
+      },
+    ],
   },
 }

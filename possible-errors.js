@@ -4,6 +4,8 @@ module.exports = {
     node: true,
   },
   rules: {
+    'for-direction': 2,
+    'getter-return': ['error', {allowImplicit: true}],
     'no-cond-assign': 2,
     'no-console': 2,
     'no-constant-condition': 2,
@@ -17,8 +19,6 @@ module.exports = {
     'no-empty': 2,
     'no-ex-assign': 2,
     'no-extra-boolean-cast': 0,
-    'no-extra-parens': 0,
-    'no-extra-semi': 2,
     'no-func-assign': 2,
     'no-inner-declarations': 2,
     'no-invalid-regexp': 2,

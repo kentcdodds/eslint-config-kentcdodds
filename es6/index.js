@@ -4,6 +4,7 @@ module.exports = {
     './stylistic.js',
     './best-practices.js',
     './possible-errors.js',
+    'prettier',
   ],
   rules: {},
 }

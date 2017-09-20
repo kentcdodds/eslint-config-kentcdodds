@@ -2,18 +2,15 @@ module.exports = {
   extends: './non-rules-config.js',
   rules: {
     'arrow-body-style': 0, // this is nice, but not useful all the time.
-    'arrow-spacing': [2, {before: true, after: true}],
-    'prefer-arrow-callback': [2, {allowNamedFunctions: true, allowUnboundThis: true}],
-    'rest-spread-spacing': [2, 'never'],
+    'prefer-arrow-callback': [
+      2,
+      {allowNamedFunctions: true, allowUnboundThis: true},
+    ],
     'sort-imports': 0,
-    'template-curly-spacing': [2, 'never'],
-    'yield-star-spacing': [2, {before: false, after: true}],
 
     // babel version fixes the eslint version
-    'object-curly-spacing': 0,
     'babel/object-curly-spacing': [2, 'never'],
 
-    semi: 0,
     'babel/semi': [2, 'never'],
 
     'no-invalid-this': 0,

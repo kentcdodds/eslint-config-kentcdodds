@@ -1,7 +1,5 @@
 module.exports = {
-  plugins: [
-    'import',
-  ],
+  plugins: ['import'],
   env: {
     es6: true,
   },
@@ -11,10 +9,6 @@ module.exports = {
     ecmaFeatures: {experimentalObjectRestSpread: true},
   },
   settings: {
-    'import/ignore': [
-      'node_modules',
-      '.json$',
-      '.(scss|less|css|styl)$',
-    ],
+    'import/ignore': ['node_modules', '.json$', '.(scss|less|css|styl)$'],
   },
 }

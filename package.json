@@ -13,24 +13,16 @@
     "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
-    "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
+    "disabled:find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
     "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack.js",
-    "commitmsg": "validate-commit-msg",
-    "precommit": "npm t",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "precommit": "npm run validate",
+    "validate": "npm t"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/kentcdodds/eslint-config-kentcdodds.git"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "config",
-    "kentcdodds",
-    "javascript",
-    "styleguide"
-  ],
+  "keywords": ["eslint", "eslintconfig", "config", "kentcdodds", "javascript", "styleguide"],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
   "bugs": {
@@ -38,34 +30,25 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
-    "babel-eslint": "^7.2.3",
+    "babel-eslint": "^8.0.0",
     "babel-plugin-module-resolver": "^2.7.1",
+    "eslint-config-prettier": "^2.5.0",
     "eslint-import-resolver-babel-module": "^3.0.0",
-    "eslint-import-resolver-webpack": "^0.8.1",
+    "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-plugin-babel": "^4.1.1",
-    "eslint-plugin-import": "^2.3.0",
-    "eslint-plugin-jest": "^20.0.3",
-    "eslint-plugin-jsx-a11y": "^5.0.3",
-    "eslint-plugin-react": "^7.0.1",
-    "webpack": "^2.6.1"
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0",
+    "webpack": "^3.2.0"
   },
   "peerDependencies": {
     "eslint": ">=3"
   },
   "devDependencies": {
-    "babel-core": "^6.24.1",
-    "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.0.0",
-    "eslint": "^3.19.0",
-    "eslint-find-rules": "^1.14.3",
-    "husky": "^0.13.4",
-    "npm-run-all": "^4.0.2",
-    "semantic-release": "^6.3.6",
-    "validate-commit-msg": "^2.12.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+    "eslint": "^4.7.1",
+    "eslint-find-rules": "^3.1.1",
+    "husky": "^0.14.3",
+    "npm-run-all": "^4.1.1"
   }
 }
