@@ -8,10 +8,8 @@ module.exports = {
     ],
     'sort-imports': 0,
 
-    // babel version fixes the eslint version
-    'babel/object-curly-spacing': [2, 'never'],
-
-    'babel/semi': [2, 'never'],
+    'babel/object-curly-spacing': 0,
+    'babel/semi': 0,
 
     'no-invalid-this': 0,
     'babel/no-invalid-this': 2,

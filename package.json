@@ -22,7 +22,14 @@
     "type": "git",
     "url": "https://github.com/kentcdodds/eslint-config-kentcdodds.git"
   },
-  "keywords": ["eslint", "eslintconfig", "config", "kentcdodds", "javascript", "styleguide"],
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "config",
+    "kentcdodds",
+    "javascript",
+    "styleguide"
+  ],
   "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
   "license": "MIT",
   "bugs": {
@@ -30,23 +37,23 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
-    "babel-eslint": "^8.0.0",
+    "babel-eslint": "^8.0.1",
     "babel-plugin-module-resolver": "^2.7.1",
-    "eslint-config-prettier": "^2.5.0",
+    "eslint-config-prettier": "^2.6.0",
     "eslint-import-resolver-babel-module": "^3.0.0",
     "eslint-import-resolver-webpack": "^0.8.3",
     "eslint-plugin-babel": "^4.1.1",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jest": "^21.1.0",
+    "eslint-plugin-jest": "^21.2.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.1.0",
-    "webpack": "^3.2.0"
+    "eslint-plugin-react": "^7.4.0",
+    "webpack": "^3.7.1"
   },
   "peerDependencies": {
     "eslint": ">=3"
   },
   "devDependencies": {
-    "eslint": "^4.7.1",
+    "eslint": "^4.8.0",
     "eslint-find-rules": "^3.1.1",
     "husky": "^0.14.3",
     "npm-run-all": "^4.1.1"
