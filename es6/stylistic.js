@@ -1,20 +1,20 @@
 module.exports = {
   extends: './non-rules-config.js',
   rules: {
-    'arrow-body-style': 0, // this is nice, but not useful all the time.
+    'arrow-body-style': 'off', // this is nice, but not useful all the time.
     'prefer-arrow-callback': [
       2,
       {allowNamedFunctions: true, allowUnboundThis: true},
     ],
-    'sort-imports': 0,
+    'sort-imports': 'off',
 
-    'babel/object-curly-spacing': 0,
-    'babel/semi': 0,
+    'babel/object-curly-spacing': 'off',
+    'babel/semi': 'off',
 
-    'no-invalid-this': 0,
-    'babel/no-invalid-this': 2,
+    'no-invalid-this': 'off',
+    'babel/no-invalid-this': 'error',
 
-    'new-cap': 0,
+    'new-cap': 'off',
     'babel/new-cap': [
       2,
       {
@@ -24,13 +24,13 @@ module.exports = {
     ],
 
     //   no eslint version
-    'babel/flow-object-type': 0, // no opinion
+    'babel/flow-object-type': 'off', // no opinion
 
     // deprecated rules
-    'babel/array-bracket-spacing': 0,
-    'babel/arrow-parens': 0,
-    'babel/func-params-comma-dangle': 0,
-    'babel/generator-star-spacing': 0,
-    'babel/object-shorthand': 0,
+    'babel/array-bracket-spacing': 'off',
+    'babel/arrow-parens': 'off',
+    'babel/func-params-comma-dangle': 'off',
+    'babel/generator-star-spacing': 'off',
+    'babel/object-shorthand': 'off',
   },
 }

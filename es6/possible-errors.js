@@ -1,11 +1,18 @@
 module.exports = {
   extends: './non-rules-config.js',
   rules: {
-    'constructor-super': 2,
-    'no-await-in-loop': 2,
-    'no-const-assign': 2,
-    'no-dupe-class-members': 2,
-    'no-new-symbol': 2,
-    'no-this-before-super': 2,
+    'constructor-super': 'error',
+    'no-await-in-loop': 'error',
+    'no-const-assign': 'error',
+    'no-dupe-class-members': 'error',
+    'no-new-symbol': 'error',
+    'no-this-before-super': 'error',
+    'babel/no-unused-expressions': 'error',
+    'no-unused-expressions': 'off',
+    'babel/quotes': [
+      'error',
+      'single',
+      {avoidEscape: true, allowTemplateLiterals: true},
+    ],
   },
 }
