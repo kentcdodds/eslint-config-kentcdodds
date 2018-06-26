@@ -50,7 +50,7 @@
     "webpack": "^3.7.1"
   },
   "peerDependencies": {
-    "eslint": ">=3"
+    "eslint": ">=5"
   },
   "devDependencies": {
     "eslint": "^4.8.0",
