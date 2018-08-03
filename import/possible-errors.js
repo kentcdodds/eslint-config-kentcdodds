@@ -10,6 +10,6 @@ module.exports = {
     'import/no-named-as-default-member': 'error',
     'import/no-cycle': 'warn',
     'import/no-self-import': 'error',
-    'import/no-useless-path-segments': 'error',
+    'import/no-useless-path-segments': 'off',
   },
 }
