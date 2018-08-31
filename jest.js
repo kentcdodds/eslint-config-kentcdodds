@@ -18,6 +18,10 @@ module.exports = {
     'jest/prefer-expect-assertions': 'off',
     'jest/prefer-to-be-null': 'off',
     'jest/prefer-to-be-undefined': 'off',
+    'jest/expect-expect': 'off',
+    'jest/no-test-return-statement': 'off',
+    'jest/prefer-inline-snapshots': 'off',
+    'jest/prefer-strict-equal': 'off',
   },
   env: {
     'jest/globals': true,

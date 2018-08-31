@@ -71,6 +71,10 @@ module.exports = {
     'require-await': 'error', // if you don't need async, don't use async or return Promise.resolve...
     'vars-on-top': 'error',
     yoda: 'error',
+    'require-atomic-updates': 'off',
+    'require-unicode-regexp': 'off',
+    'no-misleading-character-class': 'off',
+    'no-async-promise-executor': 'off',
 
     // strict
     strict: 'error',
