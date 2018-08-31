@@ -42,5 +42,6 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 'error',
     'jsx-a11y/scope': 'error',
     'jsx-a11y/tabindex-no-positive': 'warn',
+    'jsx-a11y/label-has-associated-control': 'off',
   },
 }
