@@ -1,3 +1,22 @@
+const readPkgUp = require('read-pkg-up')
+const semver = require('semver')
+
+const pkg = readPkgUp.sync({normalize: true})
+// eslint-disable-next-line prefer-object-spread
+const allDeps = Object.assign(
+  {react: '16.5.2'},
+  pkg.peerDependencies,
+  pkg.devDependencies,
+  pkg.dependencies,
+)
+
+const oldestSupportedReactVersion = semver
+  .validRange(allDeps.react)
+  .replace(/[>=<|]/g, ' ')
+  .split(' ')
+  .filter(Boolean)
+  .sort(semver.compare)[0]
+
 module.exports = {
   extends: ['prettier/react'],
   env: {
@@ -9,6 +28,11 @@ module.exports = {
     },
   },
   plugins: ['react'],
+  settings: {
+    react: {
+      version: oldestSupportedReactVersion,
+    },
+  },
   rules: {
     'react/display-name': ['error', {ignoreTranspilerName: false}],
     'react/forbid-component-props': 'off',

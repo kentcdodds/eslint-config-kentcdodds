@@ -36,22 +36,24 @@
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
     "babel-eslint": "^9.0.0",
-    "eslint-config-prettier": "^3.0.0",
+    "eslint-config-prettier": "^3.0.1",
     "eslint-import-resolver-webpack": "^0.10.1",
-    "eslint-plugin-babel": "^5.1.0",
-    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.22.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-react": "^7.4.0",
-    "webpack": "^4.12.1"
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "read-pkg-up": "^4.0.0",
+    "semver": "^5.5.1",
+    "webpack": "^4.19.1"
   },
   "peerDependencies": {
     "eslint": ">=5"
   },
   "devDependencies": {
-    "eslint": "^5.0.1",
-    "eslint-find-rules": "^3.1.1",
+    "eslint": "^5.6.0",
+    "eslint-find-rules": "^3.3.1",
     "husky": "^0.14.3",
-    "npm-run-all": "^4.1.1"
+    "npm-run-all": "^4.1.3"
   }
 }
