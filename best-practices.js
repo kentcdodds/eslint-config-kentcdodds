@@ -92,11 +92,12 @@ module.exports = {
     'no-unused-vars': [
       2,
       {
-        argsIgnorePattern: '^_',
-        varsIgnorePattern: '^ignored',
-        args: 'after-used',
-      },
-    ],
+        'argsIgnorePattern': '^_',
+        'varsIgnorePattern': '^ignored',
+        'args': 'after-used',
+        'ignoreRestSiblings': true
+      }
+    ]
 
     // CommonJS
     'callback-return': 'off', // see known limitations: http://eslint.org/docs/rules/callback-return it's just annoying...
