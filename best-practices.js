@@ -89,13 +89,13 @@ module.exports = {
     'no-undef-init': 'error',
     'no-undef': 'error',
     'no-undefined': 'off',
-    "no-unused-vars": [
+    'no-unused-vars': [
       2,
       {
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^ignored",
-        "args": "after-used",
-        "ignoreRestSiblings": true
+        'argsIgnorePattern': '^_',
+        'varsIgnorePattern': '^ignored',
+        'args': 'after-used',
+        'ignoreRestSiblings': true
       }
     ]
 
