@@ -22,6 +22,11 @@ module.exports = {
         capIsNew: true,
       },
     ],
+    camelcase: 'off',
+    'babel/camelcase': ['error', {properties: 'always'}],
+
+    'valid-typeof': 'off',
+    'babel/valid-typeof': 'error',
 
     //   no eslint version
     'babel/flow-object-type': 'off', // no opinion
