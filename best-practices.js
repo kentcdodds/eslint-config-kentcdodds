@@ -97,7 +97,7 @@ module.exports = {
         'args': 'after-used',
         'ignoreRestSiblings': true
       }
-    ]
+    ],
 
     // CommonJS
     'callback-return': 'off', // see known limitations: http://eslint.org/docs/rules/callback-return it's just annoying...
