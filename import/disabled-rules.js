@@ -8,6 +8,8 @@ module.exports = {
     'import/no-dynamic-require': 'off',
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'off',
+    // Prohibit named exports. Mostly an inverse of no-default-export.
+    'import/no-named-export': 'off',
     'import/unambiguous': 'off', // not sure I understand this rule well enough right now...
     'import/no-relative-parent-imports': 'off',
   },
