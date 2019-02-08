@@ -27,6 +27,8 @@ module.exports = {
     'jest/prefer-inline-snapshots': 'off',
     'jest/prefer-strict-equal': 'off',
     'jest/prefer-spy-on': 'off',
+    'jest/prefer-todo': 'warn',
+    'jest/no-truthy-falsy': 'off',
   },
   env: {
     'jest/globals': true,
