@@ -68,6 +68,7 @@ module.exports = {
     'no-warning-comments': ['error', {terms: ['fixme'], location: 'anywhere'}],
     'no-with': 'off',
     'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
+    'prefer-named-capture-group': 'off', // maybe one day... But I'm not used to it yet.
     radix: 'error',
     'require-await': 'error', // if you don't need async, don't use async or return Promise.resolve...
     'vars-on-top': 'error',

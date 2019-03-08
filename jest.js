@@ -28,6 +28,7 @@ module.exports = {
     'jest/prefer-strict-equal': 'off',
     'jest/prefer-spy-on': 'off',
     'jest/prefer-todo': 'warn',
+    'jest/prefer-called-with': 'error',
     'jest/no-truthy-falsy': 'off',
   },
   env: {

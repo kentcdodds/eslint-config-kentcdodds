@@ -32,7 +32,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['react'],
+  plugins: ['react', 'react-hooks'],
   settings: {
     react: {
       version: oldestSupportedReactVersion,
@@ -109,5 +109,7 @@ module.exports = {
     'react/jsx-max-depth': 'off',
     'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-sort-default-props': 'off',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
   },
 }
