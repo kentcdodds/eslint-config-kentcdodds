@@ -12,8 +12,12 @@
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
     "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack.js",
-    "precommit": "npm run validate",
     "validate": "npm t"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run validate"
+    }
   },
   "repository": {
     "type": "git",
