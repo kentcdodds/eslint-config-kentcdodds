@@ -30,6 +30,7 @@ module.exports = {
     'jest/prefer-todo': 'warn',
     'jest/prefer-called-with': 'error',
     'jest/no-truthy-falsy': 'off',
+    'jest/no-empty-title': 'error',
   },
   env: {
     'jest/globals': true,
