@@ -14,5 +14,6 @@ module.exports = {
     'import/no-restricted-paths': 'off',
     'import/no-unassigned-import': 'off',
     'import/no-webpack-loader-syntax': 'error',
+    'import/no-unused-modules': 'off',
   },
 }
