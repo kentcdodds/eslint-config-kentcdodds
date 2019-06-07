@@ -31,6 +31,8 @@ module.exports = {
     'jest/prefer-called-with': 'error',
     'jest/no-truthy-falsy': 'off',
     'jest/no-empty-title': 'error',
+    'jest/no-mocks-import': 'error',
+    'jest/no-commented-out-tests': 'warn',
   },
   env: {
     'jest/globals': true,
