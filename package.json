@@ -7,11 +7,11 @@
     "lint": "eslint .",
     "test": "npm-run-all --parallel lint find-new-rules",
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y.js",
-    "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest.js",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
-    "find-new-rules:react": "eslint-find-rules --unused ./other/test/react.js",
-    "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack.js",
+    "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y/index.js",
+    "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest/index.js",
+    "find-new-rules:react": "eslint-find-rules --unused ./other/test/react/index.js",
+    "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack/index.js",
     "validate": "npm t"
   },
   "husky": {
@@ -39,7 +39,7 @@
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
     "babel-eslint": "^10.0.1",
-    "eslint-config-prettier": "^4.3.0",
+    "eslint-config-prettier": "^6.0.0",
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.17.1",
@@ -57,7 +57,7 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-find-rules": "^3.3.1",
-    "husky": "^2.4.0",
+    "husky": "^3.0.0",
     "npm-run-all": "^4.1.3"
   }
 }
