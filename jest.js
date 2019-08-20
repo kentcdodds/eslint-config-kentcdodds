@@ -33,6 +33,12 @@ module.exports = {
     'jest/no-empty-title': 'error',
     'jest/no-mocks-import': 'error',
     'jest/no-commented-out-tests': 'warn',
+    'jest/no-duplicate-hooks': 'off',
+    'jest/no-expect-resolves': 'off',
+    'jest/no-export': 'error',
+    'jest/no-if': 'error',
+    'jest/no-standalone-expect': 'off',
+    'jest/no-try-expect': 'error',
   },
   env: {
     'jest/globals': true,
