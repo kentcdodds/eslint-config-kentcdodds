@@ -92,7 +92,7 @@ module.exports = {
     'no-undef': 'error',
     'no-undefined': 'off',
     'no-unused-vars': [
-      2,
+      'error',
       {
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^ignored',

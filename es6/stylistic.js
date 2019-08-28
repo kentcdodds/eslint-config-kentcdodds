@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     'arrow-body-style': 'off', // this is nice, but not useful all the time.
     'prefer-arrow-callback': [
-      2,
+      'error',
       {allowNamedFunctions: true, allowUnboundThis: true},
     ],
     'sort-imports': 'off',
@@ -16,7 +16,7 @@ module.exports = {
 
     'new-cap': 'off',
     'babel/new-cap': [
-      2,
+      'error',
       {
         newIsCap: true,
         capIsNew: true,
