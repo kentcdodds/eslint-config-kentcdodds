@@ -10,7 +10,7 @@ module.exports = {
     'import/no-namespace': 'off',
     'import/no-nodejs-modules': 'off',
     'import/order': [
-      1,
+      'warn',
       {
         groups: [
           'builtin',
