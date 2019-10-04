@@ -77,11 +77,14 @@ module.exports = {
     'require-unicode-regexp': 'off',
     'no-misleading-character-class': 'off',
     'no-async-promise-executor': 'off',
+    'no-import-assign': 'error',
+    'prefer-regex-literals': 'error',
 
     // strict
     strict: 'error',
 
     // variables
+    'default-param-last': 'error',
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
     'no-catch-shadow': 'error',
     'no-delete-var': 'error',

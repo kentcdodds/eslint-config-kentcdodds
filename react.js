@@ -105,7 +105,6 @@ module.exports = {
     'react/no-typos': 'error',
     'react/no-unsafe': 'warn', // if you need it there should be a comment explaining why
     'react/no-unused-state': 'error',
-
     'react/boolean-prop-naming': 'off',
     'react/button-has-type': 'off',
     'react/destructuring-assignment': 'off',
@@ -113,6 +112,8 @@ module.exports = {
     'react/jsx-max-depth': 'off',
     'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-sort-default-props': 'off',
+    'react/jsx-no-useless-fragment': 'warn',
+
     'react-hooks/exhaustive-deps': 'warn',
     'react-hooks/rules-of-hooks': 'error',
   },
