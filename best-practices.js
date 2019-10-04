@@ -78,13 +78,13 @@ module.exports = {
     'no-misleading-character-class': 'off',
     'no-async-promise-executor': 'off',
     'no-import-assign': 'error',
-    'prefer-regex-literals': 'error',
+    'prefer-regex-literals': 'off',
 
     // strict
     strict: 'error',
 
     // variables
-    'default-param-last': 'error',
+    'default-param-last': 'off',
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
     'no-catch-shadow': 'error',
     'no-delete-var': 'error',
