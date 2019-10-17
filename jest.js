@@ -40,6 +40,7 @@ module.exports = {
     'jest/no-standalone-expect': 'off',
     'jest/no-try-expect': 'error',
     'jest/require-top-level-describe': 'off',
+    'jest/prefer-hooks-on-top': 'error',
   },
   env: {
     'jest/globals': true,
