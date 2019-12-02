@@ -4,9 +4,9 @@ import PropTypes from 'prop-types'
 export default Users
 
 function Users({nameFilter}) {
-  const users = [{name: 'Janice', friends: ['Albert', 'Nancy'], id: 23}].filter(
-    ({name}) => name.toLowerCase().includes(nameFilter),
-  )
+  const users = [
+    {name: 'Janice', friends: ['Albert', 'Nancy'], id: 23},
+  ].filter(({name}) => name.toLowerCase().includes(nameFilter))
   return (
     <div className="user-list" id="users-section" data-testid="users">
       {users.map(user => (
