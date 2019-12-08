@@ -12,6 +12,7 @@ module.exports = {
     'no-useless-rename': 'error',
     'no-var': 'error',
     'prefer-const': 'error',
+    'prefer-exponentiation-operator': 'warn',
     'prefer-numeric-literals': 'error',
     'prefer-reflect': 'off', // maybe one day
     'prefer-rest-params': 'error',
