@@ -44,6 +44,7 @@ module.exports = {
     'react/forbid-elements': 'off',
     'react/forbid-foreign-prop-types': 'error',
     'react/forbid-prop-types': 'off',
+    'react/function-component-definition': 'off',
     'react/jsx-boolean-value': 'off',
     'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
     'react/jsx-fragments': 'off',
@@ -53,6 +54,7 @@ module.exports = {
     'react/jsx-no-comment-textnodes': 'error',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'off',
+    'react/jsx-no-script-url': 'error',
     'react/jsx-no-target-blank': 'error',
     'react/jsx-no-undef': 'error',
     'react/jsx-props-no-spreading': 'off',
@@ -61,6 +63,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-array-index-key': 'off', // sometimes you don't care about the issues or they don't apply
+    'react/no-adjacent-inline-elements': 'warn',
     'react/no-children-prop': 'off',
     'react/no-danger': 'off',
     'react/no-danger-with-children': 'error',
