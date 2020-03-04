@@ -1,0 +1,128 @@
+{
+  "projectName": "eslint-config-kentcdodds",
+  "projectOwner": "kentcdodds",
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributorsPerLine": 7,
+  "repoHost": "https://github.com",
+  "repoType": "github",
+  "skipCi": false,
+  "files": [
+    "README.md"
+  ],
+  "contributors": [
+    {
+      "login": "kentcdodds",
+      "name": "Kent C. Dodds",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1500684?v=3",
+      "profile": "https://kentcdodds.com",
+      "contributions": [
+        "code",
+        "doc",
+        "infra"
+      ]
+    },
+    {
+      "login": "BarryThePenguin",
+      "name": "Jonathan Haines",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1351912?v=4",
+      "profile": "http://jonno.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "zack9433",
+      "name": "Zack Yang",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/1610642?v=4",
+      "profile": "https://github.com/zack9433",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Mohamed3on",
+      "name": "Mohamed Oun",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/12295159?v=4",
+      "profile": "https://mohamed3on.online/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "alexandernanberg",
+      "name": "Alexander Nanberg",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/8997319?v=4",
+      "profile": "https://alexandernanberg.com",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "huchenme",
+      "name": "Hu Chen",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/2078389?v=4",
+      "profile": "https://huchen.dev",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "weyert",
+      "name": "Weyert de Boer",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7049?v=4",
+      "profile": "https://github.com/weyert",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ultrox",
+      "name": "Marko Vujanic",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/3077558?v=4",
+      "profile": "http://ma.vu",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MichaelDeBoey",
+      "name": "Michaël De Boey",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6643991?v=4",
+      "profile": "https://michaeldeboey.be",
+      "contributions": [
+        "code",
+        "doc",
+        "tool"
+      ]
+    },
+    {
+      "login": "jdorfman",
+      "name": "Justin Dorfman",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/398230?v=4",
+      "profile": "https://www.justindorfman.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "arvigeus",
+      "name": "Nikolay Stoynov",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/4872470?v=4",
+      "profile": "http://arvigeus.github.com",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "andrewmcodes",
+      "name": "Andrew Mason",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/18423853?v=4",
+      "profile": "https://www.andrewm.codes",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ]
+}
