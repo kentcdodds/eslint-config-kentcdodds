@@ -1,9 +1,3 @@
-<p align="center">
-<a href="https://codefund.io/properties/508/visit-sponsor">
-<img src="https://codefund.io/properties/508/sponsor" />
-</a>
-</p>
-
 # eslint-config-kentcdodds
 
 [![travis build](https://img.shields.io/travis/kentcdodds/eslint-config-kentcdodds.svg?style=flat-square)](https://travis-ci.org/kentcdodds/eslint-config-kentcdodds)
