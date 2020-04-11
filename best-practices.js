@@ -7,6 +7,7 @@ module.exports = {
     'class-methods-use-this': 'off', // three words: "componentDidMount" :)
     complexity: ['error', 14],
     'consistent-return': 'error',
+    curly: ['error', 'all'],
     'default-case': 'error',
     'default-param-last': 'off',
     'dot-notation': 'error',
