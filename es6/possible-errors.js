@@ -9,10 +9,5 @@ module.exports = {
     'no-this-before-super': 'error',
     'babel/no-unused-expressions': 'error',
     'no-unused-expressions': 'off',
-    'babel/quotes': [
-      'error',
-      'single',
-      {avoidEscape: true, allowTemplateLiterals: true},
-    ],
   },
 }

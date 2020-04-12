@@ -8,9 +8,6 @@ module.exports = {
     ],
     'sort-imports': 'off',
 
-    'babel/object-curly-spacing': 'off',
-    'babel/semi': 'off',
-
     'no-invalid-this': 'off',
     'babel/no-invalid-this': 'error',
 
