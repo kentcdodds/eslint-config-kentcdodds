@@ -4,24 +4,19 @@
   "description": "ESLint rules according to kentcdodds' personal preference",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "npm-run-all --parallel lint find-new-rules",
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
-    "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y/index.js",
     "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest/index.js",
+    "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y/index.js",
+    "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react/index.js",
     "find-new-rules:webpack": "eslint-find-rules --unused ./other/test/webpack/index.js",
-    "validate": "npm t"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged && npm run validate"
-    }
+    "lint": "kcd-scripts lint",
+    "test": "npm-run-all --parallel lint find-new-rules",
+    "validate": "kcd-scripts validate lint,test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds.git"
+    "url": "https://github.com/kentcdodds/eslint-config-kentcdodds"
   },
   "keywords": [
     "eslint",
@@ -31,39 +26,46 @@
     "javascript",
     "styleguide"
   ],
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "author": "Kent C. Dodds <me@kentcdodds.com> (https://kentcdodds.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kentcdodds/eslint-config-kentcdodds/issues"
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
-    "babel-eslint": "^10.0.3",
-    "eslint-config-prettier": "^6.10.0",
+    "babel-eslint": "^10.1.0",
+    "eslint-config-prettier": "^6.10.1",
     "eslint-import-resolver-webpack": "^0.12.1",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^23.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "eslint-plugin-react-hooks": "^2.4.0",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
     "read-pkg-up": "^7.0.1",
-    "semver": "^7.1.3",
-    "webpack": "^4.41.6"
+    "semver": "^7.2.2",
+    "webpack": "^4.42.1"
   },
   "peerDependencies": {
     "eslint": ">=6"
   },
   "devDependencies": {
-    "eslint": "^6.7.2",
+    "eslint": "^6.8.0",
     "eslint-find-rules": "^3.4.0",
-    "husky": "^4.2.3",
+    "kcd-scripts": "^5.9.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "1.19.1",
     "pretty-quick": "^2.0.1"
   },
+  "eslintConfig": {
+    "extends": "./index.js"
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage",
+    "dist"
+  ],
   "engines": {
-    "node": ">=8",
+    "node": ">=8.10",
     "npm": ">=6",
     "yarn": ">=1"
   }
