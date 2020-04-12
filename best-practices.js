@@ -1,8 +1,5 @@
 module.exports = {
-  env: {
-    browser: true,
-    node: true,
-  },
+  extends: './non-rules-config.js',
   rules: {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',

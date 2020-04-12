@@ -1,9 +1,5 @@
 module.exports = {
-  extends: ['prettier'],
-  env: {
-    browser: true,
-    node: true,
-  },
+  extends: ['./non-rules-config.js', 'prettier'],
   rules: {
     camelcase: ['error', {properties: 'always'}],
     'capitalized-comments': 'off', // wHO CaRes?
