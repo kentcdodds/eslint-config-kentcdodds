@@ -20,9 +20,5 @@ module.exports = {
     'prefer-template': 'error',
     'require-yield': 'error',
     'symbol-description': 'error',
-
-    // babel plugin
-    //   no eslint version
-    'babel/no-await-in-loop': 'off', // this is deprecated
   },
 }
