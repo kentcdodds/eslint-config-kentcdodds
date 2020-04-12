@@ -14,7 +14,6 @@ module.exports = {
     'prefer-const': 'error',
     'prefer-exponentiation-operator': 'warn',
     'prefer-numeric-literals': 'error',
-    'prefer-reflect': 'off', // maybe one day
     'prefer-rest-params': 'error',
     'prefer-spread': 'error',
     'prefer-template': 'error',

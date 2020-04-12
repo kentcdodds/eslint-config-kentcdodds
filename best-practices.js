@@ -36,7 +36,6 @@ module.exports = {
     'no-loop-func': 'error',
     'no-magic-numbers': 'off', // sometimes this is ok (foo.length - 1 == index of last one)
     'no-multi-str': 'error',
-    'no-native-reassign': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
     'no-new': 'error',
@@ -87,7 +86,6 @@ module.exports = {
     // variables
     'default-param-last': 'off',
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
-    'no-catch-shadow': 'error',
     'no-delete-var': 'error',
     'no-label-var': 'error',
     'no-shadow-restricted-names': 'error',

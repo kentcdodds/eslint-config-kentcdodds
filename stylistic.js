@@ -18,7 +18,6 @@ module.exports = {
     'linebreak-style': ['error', 'unix'],
     'line-comment-position': 'off',
     'lines-around-comment': 'off',
-    'lines-around-directive': 'off',
     'lines-between-class-members': 'off',
     'max-classes-per-file': 'off',
     'max-depth': ['error', 4],
@@ -33,8 +32,6 @@ module.exports = {
     'max-statements': ['error', 40],
     'multiline-comment-style': 'off', // this would be cool to get the fixer, but too strict.
     'new-cap': 'error',
-    'newline-after-var': 'off',
-    'newline-before-return': 'off',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
     'no-continue': 'error',
@@ -54,7 +51,6 @@ module.exports = {
     'padding-line-between-statements': 'off', // meh...
     'prefer-destructuring': 'off', // nah, I like it, but not that much...
     'prefer-object-spread': 'warn',
-    'require-jsdoc': 'off',
     'sort-keys': 'off',
     'sort-vars': 'off',
     'spaced-comment': 'off',

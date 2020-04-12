@@ -20,7 +20,6 @@ module.exports = {
     'no-inner-declarations': 'error',
     'no-invalid-regexp': 'error',
     'no-irregular-whitespace': 'error',
-    'no-negated-in-lhs': 'error',
     'no-obj-calls': 'error',
     'no-prototype-builtins': 'off',
     'no-regex-spaces': 'error',
@@ -31,7 +30,6 @@ module.exports = {
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
     'use-isnan': 'error',
-    'valid-jsdoc': ['error', {requireReturn: false}],
     'valid-typeof': 'error',
 
     // variables

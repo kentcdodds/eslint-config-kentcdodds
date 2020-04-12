@@ -24,7 +24,7 @@ module.exports = {
     'jsx-a11y/iframe-has-title': 'error',
     'jsx-a11y/img-redundant-alt': 'error',
     'jsx-a11y/interactive-supports-focus': 'warn',
-    'jsx-a11y/label-has-for': 'off',
+    'jsx-a11y/label-has-for': 'off', // deprecated -> label-has-associated-control
     'jsx-a11y/lang': 'error',
     'jsx-a11y/media-has-caption': 'warn',
     'jsx-a11y/mouse-events-have-key-events': 'error',
