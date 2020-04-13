@@ -98,4 +98,60 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'default-param-last': 'off',
+        '@typescript-eslint/default-param-last': 'off',
+
+        'dot-notation': 'off',
+        '@typescript-eslint/dot-notation': 'error',
+
+        'no-empty-function': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+
+        'no-implied-eval': 'error',
+        '@typescript-eslint/no-implied-eval': 'error',
+
+        'no-invalid-this': 'off',
+        '@typescript-eslint/no-invalid-this': 'error',
+
+        'no-loop-func': 'off',
+        '@typescript-eslint/no-loop-func': 'error',
+
+        'no-magic-numbers': 'off',
+        '@typescript-eslint/no-magic-numbers': 'off',
+
+        'no-redeclare': 'off',
+        '@typescript-eslint/no-redeclare': 'error',
+
+        'no-return-await': 'off',
+        '@typescript-eslint/return-await': 'error',
+
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': 'error',
+
+        'no-throw-literal': 'off',
+        '@typescript-eslint/no-throw-literal': 'error',
+
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'off',
+
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            argsIgnorePattern: '^_',
+            varsIgnorePattern: '^ignored',
+            args: 'after-used',
+            ignoreRestSiblings: true,
+          },
+        ],
+
+        'require-await': 'off',
+        '@typescript-eslint/require-await': 'error',
+      },
+    },
+  ],
 }

@@ -9,7 +9,20 @@ module.exports = {
 
     'no-unused-expressions': 'off',
     'babel/no-unused-expressions': 'error',
+
     'valid-typeof': 'off',
     'babel/valid-typeof': 'error',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'no-dupe-class-members': 'off',
+        '@typescript-eslint/no-dupe-class-members': 'error',
+
+        'babel/no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
+      },
+    },
+  ],
 }

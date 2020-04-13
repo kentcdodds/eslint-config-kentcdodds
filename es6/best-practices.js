@@ -17,4 +17,16 @@ module.exports = {
     'require-yield': 'error',
     'symbol-description': 'error',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'no-duplicate-imports': 'error',
+        '@typescript-eslint/no-duplicate-imports': 'error',
+
+        'no-useless-constructor': 'off',
+        '@typescript-eslint/no-useless-constructor': 'error',
+      },
+    },
+  ],
 }

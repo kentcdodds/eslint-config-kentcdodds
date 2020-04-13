@@ -45,4 +45,16 @@ module.exports = {
     // variables
     'no-use-before-define': ['error', 'nofunc'],
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'no-loss-of-precision': 'off',
+        '@typescript-eslint/no-loss-of-precision': 'error',
+
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
+      },
+    },
+  ],
 }
