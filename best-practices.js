@@ -110,4 +110,33 @@ module.exports = {
     'no-restricted-modules': 'off',
     'no-sync': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'default-param-last': 'off',
+        '@typescript-eslint/default-param-last': 'off',
+        'no-empty-function': 'off',
+        '@typescript-eslint/no-empty-function': 'off',
+        'no-magic-numbers': 'off',
+        '@typescript-eslint/no-magic-numbers': 'off',
+        'no-return-await': 'off',
+        '@typescript-eslint/return-await': 'error',
+        'no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'off',
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+          'error',
+          {
+            argsIgnorePattern: '^_',
+            varsIgnorePattern: '^ignored',
+            args: 'after-used',
+            ignoreRestSiblings: true,
+          },
+        ],
+        'require-await': 'off',
+        '@typescript-eslint/require-await': 'error',
+      },
+    },
+  ],
 }

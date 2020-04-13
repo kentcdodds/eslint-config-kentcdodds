@@ -22,4 +22,13 @@ module.exports = {
     'no-invalid-this': 'off',
     'babel/no-invalid-this': 'error',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'babel/camelcase': 'off',
+        '@typescript-eslint/camelcase': ['error', {properties: 'always'}],
+      },
+    },
+  ],
 }

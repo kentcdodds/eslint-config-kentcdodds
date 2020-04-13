@@ -15,5 +15,20 @@ module.exports = {
     'prefer-template': 'error',
     'require-yield': 'error',
     'symbol-description': 'error',
+
+    'no-unused-expressions': 'off',
+    'babel/no-unused-expressions': 'error',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'no-useless-constructor': 'off',
+        '@typescript-eslint/no-useless-constructor': 'error',
+
+        'babel/no-unused-expressions': 'off',
+        '@typescript-eslint/no-unused-expressions': 'error',
+      },
+    },
+  ],
 }
