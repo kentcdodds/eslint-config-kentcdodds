@@ -4,16 +4,20 @@ module.exports = {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
+    'class-methods-use-this': 'off', // three words: "componentDidMount" :)
     complexity: ['error', 14],
     'consistent-return': 'error',
     'default-case': 'error',
+    'default-param-last': 'off',
     'dot-notation': 'error',
     eqeqeq: 'off',
+    'grouped-accessor-pairs': 'off',
     'guard-for-in': 'error',
+    'max-classes-per-file': 'off',
     'no-alert': 'error',
-    'no-buffer-constructor': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
+    'no-constructor-return': 'error',
     'no-div-regex': 'error',
     'no-else-return': 'off',
     'no-empty-function': 'off', // we're all grown ups here...
@@ -36,17 +40,17 @@ module.exports = {
     'no-loop-func': 'error',
     'no-magic-numbers': 'off', // sometimes this is ok (foo.length - 1 == index of last one)
     'no-multi-str': 'error',
+    'no-new': 'error',
     'no-new-func': 'error',
     'no-new-wrappers': 'error',
-    'no-new': 'error',
-    'no-octal-escape': 'error',
     'no-octal': 'error',
+    'no-octal-escape': 'error',
     'no-param-reassign': 'off',
     'no-proto': 'error',
     'no-redeclare': 'error',
     'no-restricted-properties': 'off', // no ideas of what to disallow right now...
-    'no-restricted-syntax': ['error', 'WithStatement'],
     'no-return-assign': 'error',
+    'no-return-await': 'error',
     'no-script-url': 'error',
     'no-self-assign': 'error',
     'no-self-compare': 'error',
@@ -63,35 +67,26 @@ module.exports = {
     'no-void': 'error',
     'no-warning-comments': ['error', {terms: ['fixme'], location: 'anywhere'}],
     'no-with': 'off',
-    'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
     'prefer-named-capture-group': 'off', // maybe one day... But I'm not used to it yet.
+    'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
+    'prefer-regex-literals': 'off',
     radix: 'error',
     'require-await': 'error', // if you don't need async, don't use async or return Promise.resolve...
+    'require-unicode-regexp': 'off',
     'vars-on-top': 'error',
     yoda: 'error',
-    'require-atomic-updates': 'off',
-    'require-unicode-regexp': 'off',
-    'no-misleading-character-class': 'off',
-    'no-async-promise-executor': 'off',
-    'no-constructor-return': 'error',
-    'no-dupe-else-if': 'error',
-    'no-import-assign': 'error',
-    'no-setter-return': 'error',
-    'prefer-regex-literals': 'off',
-    'grouped-accessor-pairs': 'off',
 
     // strict
     strict: 'error',
 
     // variables
-    'default-param-last': 'off',
-    'no-restricted-globals': ['error', 'event', 'fdescribe'],
     'no-delete-var': 'error',
     'no-label-var': 'error',
-    'no-shadow-restricted-names': 'error',
+    'no-restricted-globals': ['error', 'event', 'fdescribe'],
     'no-shadow': 'error',
-    'no-undef-init': 'error',
+    'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
+    'no-undef-init': 'error',
     'no-undefined': 'off',
     'no-unused-vars': [
       'error',
@@ -107,6 +102,7 @@ module.exports = {
     'callback-return': 'off', // see known limitations: http://eslint.org/docs/rules/callback-return it's just annoying...
     'global-require': 'warn', // sometimes this is ok. We shouldn't break a build
     'handle-callback-err': 'error',
+    'no-buffer-constructor': 'error',
     'no-mixed-requires': ['error', {grouping: true, allowCall: false}],
     'no-new-require': 'error',
     'no-path-concat': 'error',
