@@ -15,8 +15,6 @@ module.exports = {
       '^\\$?(__)?(([A-Z]|[a-z]|[0-9]+)|([A-Z_]))*\\$?$',
     ],
     'line-comment-position': 'off',
-    'linebreak-style': ['error', 'unix'],
-    'lines-around-comment': 'off',
     'lines-between-class-members': 'off',
     'max-depth': ['error', 4],
     'max-lines': [

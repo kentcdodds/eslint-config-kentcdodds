@@ -97,7 +97,6 @@ module.exports = {
     'react/style-prop-object': 'error',
     'react/void-dom-elements-no-children': 'error',
     'react/default-props-match-prop-types': 'error',
-    'react/jsx-child-element-spacing': 'warn',
     'react/jsx-curly-brace-presence': [
       'warn',
       {props: 'never', children: 'ignore'},
@@ -113,7 +112,6 @@ module.exports = {
     'react/destructuring-assignment': 'off',
     'react/forbid-dom-props': 'off',
     'react/jsx-max-depth': 'off',
-    'react/jsx-props-no-multi-spaces': 'off',
     'react/jsx-sort-default-props': 'off',
     'react/jsx-no-useless-fragment': 'warn',
 

@@ -28,7 +28,6 @@ module.exports = {
     'no-extra-bind': 'error',
     'no-extra-label': 'error',
     'no-fallthrough': 'error',
-    'no-floating-decimal': 'error',
     'no-global-assign': 'error',
     'no-implicit-coercion': 'off',
     'no-implicit-globals': 'error',
