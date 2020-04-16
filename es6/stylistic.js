@@ -1,5 +1,5 @@
 module.exports = {
-  extends: './non-rules-config.js',
+  extends: ['./non-rules-config.js', 'prettier'],
   rules: {
     'object-shorthand': ['error', 'properties'], // methods are optional so you can specify a name if you want
     'prefer-arrow-callback': [
