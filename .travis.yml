@@ -6,6 +6,7 @@ node_js:
   - 8.10
   - 10
   - 12
+  - 14
   - node
 install: npm install
 script:
@@ -19,6 +20,6 @@ branches:
 jobs:
   include:
     - stage: release
-      node_js: 12
+      node_js: 14
       script: kcd-scripts travis-release
       if: fork = false
