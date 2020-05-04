@@ -15,6 +15,7 @@ module.exports = {
     'jest/valid-expect-in-promise': 'error',
     'jest/consistent-test-it': 'off',
     'jest/lowercase-name': 'off',
+    'jest/no-deprecated-functions': 'error',
     'jest/no-hooks': 'off',
     'jest/no-jasmine-globals': 'off',
     'jest/no-test-callback': 'off',
