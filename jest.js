@@ -5,18 +5,19 @@ let hasTestingLibrary = false
 
 try {
   const pkg = readPkgUp.sync({normalize: true})
-  // eslint-disable-next-line prefer-object-spread
-  const allDeps = Object.assign(
-    pkg.peerDependencies,
-    pkg.devDependencies,
-    pkg.dependencies,
-  )
-  hasJestDom = allDeps.hasOwnProperty('@testing-library/jest-dom')
-  hasTestingLibrary =
-    allDeps.hasOwnProperty('@testing-library/dom') ||
-    allDeps.hasOwnProperty('@testing-library/react') ||
-    allDeps.hasOwnProperty('@testing-library/angular') ||
-    allDeps.hasOwnProperty('@testing-library/vue')
+  const allDeps = Object.keys({
+    ...pkg.peerDependencies,
+    ...pkg.devDependencies,
+    ...pkg.dependencies,
+  })
+
+  hasJestDom = allDeps.includes('@testing-library/jest-dom')
+  hasTestingLibrary = [
+    '@testing-library/dom',
+    '@testing-library/react',
+    '@testing-library/angular',
+    '@testing-library/vue',
+  ].some(dependency => allDeps.includes(dependency))
 } catch (error) {
   // ignore error
 }
