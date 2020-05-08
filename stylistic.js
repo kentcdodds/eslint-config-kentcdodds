@@ -8,7 +8,7 @@ module.exports = {
     'func-name-matching': 'error',
     'func-names': 'error',
     'func-style': 'off',
-    'id-blacklist': 'error',
+    'id-denylist': 'error',
     'id-length': 'off', // when using short composable functions, using single-letter variables is fine
     'id-match': [
       'error',

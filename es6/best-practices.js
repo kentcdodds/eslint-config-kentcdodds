@@ -3,6 +3,7 @@ module.exports = {
   rules: {
     'no-class-assign': 'error',
     'no-duplicate-imports': 'error',
+    'no-restricted-exports': 'off', // not applicable for a config preset (should be configured only in projects)
     'no-restricted-imports': 'off', // not applicable for a config preset (should be configured only in projects)
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',

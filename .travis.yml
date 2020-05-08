@@ -3,7 +3,9 @@ cache: npm
 notifications:
   email: false
 node_js:
+  - 10.12
   - 10
+  - 12.0
   - 12
   - 14
   - node

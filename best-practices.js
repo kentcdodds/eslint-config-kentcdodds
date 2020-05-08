@@ -8,6 +8,7 @@ module.exports = {
     complexity: ['error', 14],
     'consistent-return': 'error',
     'default-case': 'error',
+    'default-case-last': 'error',
     'default-param-last': 'off',
     'dot-notation': 'error',
     eqeqeq: 'off',
@@ -81,7 +82,7 @@ module.exports = {
     // variables
     'no-delete-var': 'error',
     'no-label-var': 'error',
-    'no-restricted-globals': ['error', 'event', 'fdescribe'],
+    'no-restricted-globals': ['error', 'event', 'describe'],
     'no-shadow': 'error',
     'no-shadow-restricted-names': 'error',
     'no-undef': 'error',
@@ -96,18 +97,5 @@ module.exports = {
         ignoreRestSiblings: true,
       },
     ],
-
-    // CommonJS
-    'callback-return': 'off', // see known limitations: http://eslint.org/docs/rules/callback-return it's just annoying...
-    'global-require': 'warn', // sometimes this is ok. We shouldn't break a build
-    'handle-callback-err': 'error',
-    'no-buffer-constructor': 'error',
-    'no-mixed-requires': ['error', {grouping: true, allowCall: false}],
-    'no-new-require': 'error',
-    'no-path-concat': 'error',
-    'no-process-env': 'off',
-    'no-process-exit': 'error',
-    'no-restricted-modules': 'off',
-    'no-sync': 'off',
   },
 }
