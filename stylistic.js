@@ -4,6 +4,7 @@ module.exports = {
     camelcase: ['error', {properties: 'always'}],
     'capitalized-comments': 'off', // wHO CaRes?
     'consistent-this': 'off', // Too many use-cases for reassigning "this" to different values
+    curly: ['error', 'multi-line'],
     'func-name-matching': 'error',
     'func-names': 'error',
     'func-style': 'off',
