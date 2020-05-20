@@ -68,6 +68,7 @@ module.exports = {
     'jest/no-expect-resolves': 'off',
     'jest/no-export': 'error',
     'jest/no-if': 'error',
+    'jest/no-restricted-matchers': 'off',
     'jest/no-standalone-expect': 'off',
     'jest/no-try-expect': 'error',
     'jest/require-top-level-describe': 'off',
