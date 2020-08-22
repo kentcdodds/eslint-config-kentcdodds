@@ -38,22 +38,22 @@
     "eslint-import-resolver-webpack": "^0.12.2",
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jest": "^23.18.2",
+    "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-jest-dom": "^2.1.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-react": "^7.20.3",
-    "eslint-plugin-react-hooks": "^4.0.8",
-    "eslint-plugin-testing-library": "^3.3.2",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "eslint-plugin-testing-library": "^3.6.0",
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.2",
-    "webpack": "^4.44.0"
+    "webpack": "^4.44.1"
   },
   "peerDependencies": {
     "eslint": ">=6"
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.21.5",
-    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/dom": "^7.22.3",
+    "@testing-library/jest-dom": "^5.11.3",
     "eslint": "^6.8.0",
     "eslint-find-rules": "^3.6.0",
     "kcd-scripts": "^6.2.4",
