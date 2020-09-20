@@ -39,26 +39,26 @@
     "eslint-plugin-babel": "^5.3.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^23.20.0",
-    "eslint-plugin-jest-dom": "^3.2.1",
+    "eslint-plugin-jest-dom": "^3.2.3",
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.0",
-    "eslint-plugin-testing-library": "^3.6.0",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-testing-library": "^3.9.0",
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.2",
-    "webpack": "^4.44.1"
+    "webpack": "^4.44.2"
   },
   "peerDependencies": {
     "eslint": ">=6"
   },
   "devDependencies": {
-    "@testing-library/dom": "^7.22.3",
-    "@testing-library/jest-dom": "^5.11.3",
+    "@testing-library/dom": "^7.24.2",
+    "@testing-library/jest-dom": "^5.11.4",
     "eslint": "^6.8.0",
-    "eslint-find-rules": "^3.6.0",
-    "kcd-scripts": "^6.2.4",
+    "eslint-find-rules": "^3.6.1",
+    "kcd-scripts": "^6.3.0",
     "npm-run-all": "^4.1.5",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.2"
   },
   "eslintConfig": {
     "extends": "./index.js"

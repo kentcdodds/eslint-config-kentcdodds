@@ -102,6 +102,7 @@ module.exports = {
           'testing-library/no-manual-cleanup': 'error',
           'testing-library/no-render-in-setup': 'error',
           'testing-library/no-wait-for-empty-callback': 'error',
+          'testing-library/no-wait-for-snapshot': 'error',
           'testing-library/prefer-explicit-assert': 'warn',
           'testing-library/prefer-find-by': 'error',
           'testing-library/prefer-presence-queries': 'error',
