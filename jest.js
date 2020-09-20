@@ -33,6 +33,7 @@ module.exports = {
   ].filter(Boolean),
   rules: {
     'jest/consistent-test-it': 'off',
+    'jest/no-done-callback': 'error',
     'jest/expect-expect': 'off',
     'jest/lowercase-name': 'off',
     'jest/no-alias-methods': 'off',
