@@ -49,7 +49,7 @@
     "webpack": "^4.44.2"
   },
   "peerDependencies": {
-    "eslint": "^7.9.0"
+    "eslint": "^7.0.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.24.2",
