@@ -49,7 +49,7 @@
     "webpack": "^4.44.2"
   },
   "peerDependencies": {
-    "eslint": "^7.0.0"
+    "eslint": "^7.9.0"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.24.2",
@@ -58,7 +58,7 @@
     "eslint-find-rules": "^3.6.1",
     "kcd-scripts": "^6.3.0",
     "npm-run-all": "^4.1.5",
-    "pretty-quick": "^2.0.2"
+    "pretty-quick": "^3.0.2"
   },
   "eslintConfig": {
     "extends": "./index.js"
