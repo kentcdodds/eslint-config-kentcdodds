@@ -22,5 +22,5 @@ jobs:
   include:
     - stage: release
       node_js: 14
-      script: kcd-scripts travis-release
+      script: npx kcd-scripts travis-release
       if: fork = false
