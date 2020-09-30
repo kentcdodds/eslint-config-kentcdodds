@@ -27,7 +27,7 @@ module.exports = {
     'no-loss-of-precision': 'error',
     'no-misleading-character-class': 'off',
     'no-obj-calls': 'error',
-    'no-promise-executor-return': 'error',
+    'no-promise-executor-return': 'off', // prevents: new Promise(r => setTimeout(r))
     'no-prototype-builtins': 'off',
     'no-regex-spaces': 'error',
     'no-setter-return': 'error',
