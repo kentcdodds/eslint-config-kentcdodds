@@ -193,8 +193,8 @@ MIT
 <!-- prettier-ignore-start -->
 [npm]: https://www.npmjs.com
 [node]: https://nodejs.org
-[build-badge]: https://img.shields.io/travis/com/kentcdodds/eslint-config-kentcdodds.svg?style=flat-square
-[build]: https://travis-ci.com/kentcdodds/eslint-config-kentcdodds
+[build-badge]: https://img.shields.io/github/workflow/status/kentcdodds/eslint-config-kentcdodds/validate/main?logo=github&style=flat-square
+[build]: https://github.com/kentcdodds/eslint-config-kentcdodds/actions?query=workflow%3Avalidate
 [version-badge]: https://img.shields.io/npm/v/eslint-config-kentcdodds.svg?style=flat-square
 [package]: https://www.npmjs.com/package/eslint-config-kentcdodds
 [downloads-badge]: https://img.shields.io/npm/dm/eslint-config-kentcdodds.svg?style=flat-square
