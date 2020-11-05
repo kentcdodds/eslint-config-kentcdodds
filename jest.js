@@ -1,5 +1,7 @@
 const readPkgUp = require('read-pkg-up')
 
+const {mapDeprecatedRules} = require('./utils')
+
 let hasJestDom = false
 let hasTestingLibrary = false
 
@@ -32,8 +34,8 @@ module.exports = {
     hasTestingLibrary ? 'testing-library' : null,
   ].filter(Boolean),
   rules: {
+    ...mapDeprecatedRules(['jest/no-expect-resolves']),
     'jest/consistent-test-it': 'off',
-    'jest/no-done-callback': 'error',
     'jest/expect-expect': 'off',
     'jest/lowercase-name': 'off',
     'jest/no-alias-methods': 'off',
@@ -41,8 +43,8 @@ module.exports = {
     'jest/no-conditional-expect': 'error',
     'jest/no-deprecated-functions': 'error',
     'jest/no-disabled-tests': 'warn',
+    'jest/no-done-callback': 'error',
     'jest/no-duplicate-hooks': 'off',
-    'jest/no-expect-resolves': 'off',
     'jest/no-export': 'error',
     'jest/no-focused-tests': 'error',
     'jest/no-hooks': 'off',
@@ -55,7 +57,6 @@ module.exports = {
     'jest/no-mocks-import': 'error',
     'jest/no-restricted-matchers': 'off',
     'jest/no-standalone-expect': 'off',
-    'jest/no-test-callback': 'off',
     'jest/no-test-prefixes': 'error',
     'jest/no-test-return-statement': 'off',
     'jest/no-truthy-falsy': 'off',
@@ -97,6 +98,7 @@ module.exports = {
           'testing-library/await-async-utils': 'error',
           'testing-library/await-fire-event': 'off',
           'testing-library/consistent-data-testid': 'off',
+          'testing-library/no-await-sync-events': 'error',
           'testing-library/no-await-sync-query': 'error',
           'testing-library/no-debug': 'error',
           'testing-library/no-dom-import': ['error', 'react'],
