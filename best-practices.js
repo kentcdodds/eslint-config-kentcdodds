@@ -102,6 +102,8 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       rules: {
+        'no-undef': 'off', // ts(2304)
+
         'default-param-last': 'off',
         '@typescript-eslint/default-param-last': 'off',
 
@@ -124,7 +126,7 @@ module.exports = {
         '@typescript-eslint/no-magic-numbers': 'off',
 
         'no-redeclare': 'off',
-        '@typescript-eslint/no-redeclare': 'error',
+        '@typescript-eslint/no-redeclare': 'off', // ts(2451)
 
         'no-return-await': 'off',
         '@typescript-eslint/return-await': 'error',

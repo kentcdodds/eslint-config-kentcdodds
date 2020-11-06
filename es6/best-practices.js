@@ -21,6 +21,11 @@ module.exports = {
     {
       files: ['**/*.ts?(x)'],
       rules: {
+        'no-var': 'error', // ts transpiles let/const to var, so no need for vars any more
+        'prefer-const': 'error', // ts provides better types with const
+        'prefer-rest-params': 'error', // ts provides better types with rest args over arguments
+        'prefer-spread': 'error', // ts transpiles spread to apply, so no need for manual apply
+
         'no-duplicate-imports': 'error',
         '@typescript-eslint/no-duplicate-imports': 'error',
 
