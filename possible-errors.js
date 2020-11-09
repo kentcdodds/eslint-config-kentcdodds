@@ -45,4 +45,34 @@ module.exports = {
     // variables
     'no-use-before-define': ['error', 'nofunc'],
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'getter-return': 'off', // ts(2378)
+        'no-dupe-args': 'off', // ts(2300)
+        'no-dupe-keys': 'off', // ts(1117)
+        'no-func-assign': 'off', // ts(2539)
+        'no-import-assign': 'off', // ts(2539) & ts(2540)
+        'no-obj-calls': 'off', // ts(2349)
+        'no-setter-return': 'off', // ts(2408)
+        'no-unreachable': 'off', // ts(7027)
+        'no-unsafe-negation': 'off', // ts(2365) & ts(2360) & ts(2358)
+        'valid-typeof': 'off', // ts(2367)
+
+        'no-loss-of-precision': 'off',
+        '@typescript-eslint/no-loss-of-precision': 'error',
+
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': ['error', 'nofunc'],
+
+        '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
+        '@typescript-eslint/no-unsafe-assignment': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
+        '@typescript-eslint/no-unsafe-call': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
+        '@typescript-eslint/no-unsafe-member-access': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
+        '@typescript-eslint/no-unsafe-return': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
+        '@typescript-eslint/prefer-readonly-parameter-types': 'off',
+      },
+    },
+  ],
 }

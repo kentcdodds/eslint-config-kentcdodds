@@ -11,6 +11,7 @@ module.exports = {
 
     camelcase: 'off',
     'babel/camelcase': ['error', {properties: 'always'}],
+
     'new-cap': 'off',
     'babel/new-cap': [
       'error',
@@ -19,7 +20,21 @@ module.exports = {
         capIsNew: true,
       },
     ],
+
     'no-invalid-this': 'off',
     'babel/no-invalid-this': 'error',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      extends: 'prettier/@typescript-eslint',
+      rules: {
+        'babel/camelcase': 'off',
+        '@typescript-eslint/camelcase': ['error', {properties: 'always'}],
+
+        'babel/no-invalid-this': 'off',
+        '@typescript-eslint/no-invalid-this': 'error',
+      },
+    },
+  ],
 }
