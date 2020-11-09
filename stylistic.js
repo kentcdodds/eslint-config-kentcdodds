@@ -69,6 +69,28 @@ module.exports = {
         // variables
         'init-declarations': 'off',
         '@typescript-eslint/init-declarations': 'off',
+
+        '@typescript-eslint/adjacent-overload-signatures': 'error',
+        '@typescript-eslint/ban-tslint-comment': 'error',
+        '@typescript-eslint/consistent-indexed-object-style': 'off',
+        '@typescript-eslint/consistent-type-definitions': 'off',
+        '@typescript-eslint/consistent-type-imports': 'off', // I think I prefer typed imports, but you can't always use them
+        '@typescript-eslint/explicit-function-return-type': 'off',
+        '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/member-delimiter-style': 'off',
+        '@typescript-eslint/member-ordering': 'off',
+        '@typescript-eslint/method-signature-style': 'off',
+        '@typescript-eslint/no-confusing-non-null-assertion': 'off', // prettier reformats their "correct" example anyway 🤷‍♂️
+        '@typescript-eslint/no-extra-non-null-assertion': 'error',
+        '@typescript-eslint/no-non-null-assertion': 'error',
+        '@typescript-eslint/no-parameter-properties': 'error', // yeah, I don't like this feature
+        '@typescript-eslint/no-type-alias': 'off',
+        '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
+        '@typescript-eslint/prefer-for-of': 'off', // I prefer for of, but I don't want to lint for it
+        '@typescript-eslint/typedef': 'off',
+
+        //  variables
+        '@typescript-eslint/naming-convention': 'off',
       },
     },
   ],

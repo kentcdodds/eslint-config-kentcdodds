@@ -153,6 +153,59 @@ module.exports = {
 
         'require-await': 'off',
         '@typescript-eslint/require-await': 'error',
+
+        '@typescript-eslint/array-type': 'off',
+        '@typescript-eslint/await-thenable': 'error',
+        '@typescript-eslint/ban-ts-comment': 'error',
+        '@typescript-eslint/ban-types': 'off', // not useful in a reusable config
+        '@typescript-eslint/class-literal-property-style': 'off',
+        '@typescript-eslint/consistent-type-assertions': 'off',
+        '@typescript-eslint/no-base-to-string': 'warn',
+        '@typescript-eslint/no-confusing-void-expression': 'off', // honestly, it's probably a good rule, but I do this all the time so...
+        '@typescript-eslint/no-dynamic-delete': 'error',
+        '@typescript-eslint/no-empty-interface': 'error',
+        '@typescript-eslint/no-explicit-any': 'error',
+        '@typescript-eslint/no-extraneous-class': 'error', // stay away from classes when you can
+        '@typescript-eslint/no-floating-promises': 'warn', // not a bad rule, but can be annoying
+        '@typescript-eslint/no-for-in-array': 'error',
+        '@typescript-eslint/no-implicit-any-catch': 'warn',
+        '@typescript-eslint/no-inferrable-types': 'off', // I personally prefer relying on inference where possible, but I don't want to lint for it.
+        '@typescript-eslint/no-invalid-void-type': 'warn',
+        '@typescript-eslint/no-misused-new': 'error',
+        '@typescript-eslint/no-misused-promises': 'warn',
+        '@typescript-eslint/no-namespace': 'error',
+        '@typescript-eslint/no-require-imports': 'off', // sometimes you can't do it any other way
+        '@typescript-eslint/no-this-alias': 'error',
+        '@typescript-eslint/no-unnecessary-condition': 'error',
+        '@typescript-eslint/no-unnecessary-qualifier': 'warn', // I'm not sure I understand this one
+        '@typescript-eslint/no-unnecessary-type-arguments': 'off',
+        '@typescript-eslint/no-unnecessary-type-assertion': 'error',
+        '@typescript-eslint/no-unnecessary-type-constraint': 'error',
+        '@typescript-eslint/no-var-requires': 'error',
+        '@typescript-eslint/prefer-as-const': 'error',
+        '@typescript-eslint/prefer-enum-initializers': 'error', // makes total sense
+        '@typescript-eslint/prefer-function-type': 'off', // though I'm not sure I understand it
+        '@typescript-eslint/prefer-includes': 'error', // normally I wouldn't but includes is just so much better
+        '@typescript-eslint/prefer-literal-enum-member': 'error',
+        '@typescript-eslint/prefer-namespace-keyword': 'error',
+        '@typescript-eslint/prefer-nullish-coalescing': 'error',
+        '@typescript-eslint/prefer-optional-chain': 'error',
+        '@typescript-eslint/prefer-readonly': 'off',
+        '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
+        '@typescript-eslint/prefer-regexp-exec': 'error',
+        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+        '@typescript-eslint/prefer-ts-expect-error': 'error',
+        '@typescript-eslint/promise-function-async': 'off',
+        '@typescript-eslint/require-array-sort-compare': 'off',
+        '@typescript-eslint/restrict-plus-operands': 'error',
+        '@typescript-eslint/restrict-template-expressions': 'error',
+        '@typescript-eslint/strict-boolean-expressions': 'off',
+        '@typescript-eslint/switch-exhaustiveness-check': 'error',
+        '@typescript-eslint/triple-slash-reference': 'error',
+        '@typescript-eslint/unbound-method': 'error',
+
+        //  variables
+        '@typescript-eslint/unified-signatures': 'warn',
       },
     },
   ],
