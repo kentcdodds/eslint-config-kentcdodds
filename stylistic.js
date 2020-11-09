@@ -88,8 +88,6 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
         '@typescript-eslint/prefer-for-of': 'off', // I prefer for of, but I don't want to lint for it
         '@typescript-eslint/typedef': 'off',
-
-        //  variables
         '@typescript-eslint/naming-convention': 'off',
       },
     },
