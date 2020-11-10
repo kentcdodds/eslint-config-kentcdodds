@@ -70,7 +70,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-assignment': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
         '@typescript-eslint/no-unsafe-call': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
         '@typescript-eslint/no-unsafe-member-access': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
-        '@typescript-eslint/no-unsafe-return': 'warn', // seems like an ok idea, but I don't have enough experience with TS yet.
+        '@typescript-eslint/no-unsafe-return': 'off', // seems like an ok idea, but it failed on a regular React Component
         '@typescript-eslint/prefer-readonly-parameter-types': 'off',
       },
     },

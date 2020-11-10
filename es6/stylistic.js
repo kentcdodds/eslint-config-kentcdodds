@@ -29,9 +29,6 @@ module.exports = {
       files: ['**/*.ts?(x)'],
       extends: 'prettier/@typescript-eslint',
       rules: {
-        'babel/camelcase': 'off',
-        '@typescript-eslint/camelcase': ['error', {properties: 'always'}],
-
         'babel/no-invalid-this': 'off',
         '@typescript-eslint/no-invalid-this': 'error',
       },

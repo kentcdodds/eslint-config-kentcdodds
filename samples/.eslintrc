@@ -1,3 +1,0 @@
-{
-  "extends": ["../react.js", "../jsx-a11y.js", "../index.js"]
-}
