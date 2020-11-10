@@ -66,7 +66,6 @@ module.exports = {
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
 
-        // variables
         'init-declarations': 'off',
         '@typescript-eslint/init-declarations': 'off',
 
@@ -80,6 +79,7 @@ module.exports = {
         '@typescript-eslint/member-delimiter-style': 'off',
         '@typescript-eslint/member-ordering': 'off',
         '@typescript-eslint/method-signature-style': 'off',
+        '@typescript-eslint/naming-convention': 'off',
         '@typescript-eslint/no-confusing-non-null-assertion': 'off', // prettier reformats their "correct" example anyway 🤷‍♂️
         '@typescript-eslint/no-extra-non-null-assertion': 'error',
         '@typescript-eslint/no-non-null-assertion': 'error',
@@ -88,7 +88,6 @@ module.exports = {
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'warn',
         '@typescript-eslint/prefer-for-of': 'off', // I prefer for of, but I don't want to lint for it
         '@typescript-eslint/typedef': 'off',
-        '@typescript-eslint/naming-convention': 'off',
       },
     },
   ],
