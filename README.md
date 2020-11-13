@@ -170,7 +170,7 @@ Thanks goes to these people ([emoji key][emojis]):
   </tr>
   <tr>
     <td align="center"><a href="http://ma.vu"><img src="https://avatars3.githubusercontent.com/u/3077558?v=4" width="100px;" alt=""/><br /><sub><b>Marko Vujanic</b></sub></a><br /><a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=ultrox" title="Code">💻</a></td>
-    <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt=""/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=MichaelDeBoey" title="Code">💻</a> <a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=MichaelDeBoey" title="Documentation">📖</a> <a href="#tool-MichaelDeBoey" title="Tools">🔧</a></td>
+    <td align="center"><a href="https://michaeldeboey.be"><img src="https://avatars3.githubusercontent.com/u/6643991?v=4" width="100px;" alt=""/><br /><sub><b>Michaël De Boey</b></sub></a><br /><a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=MichaelDeBoey" title="Code">💻</a> <a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=MichaelDeBoey" title="Documentation">📖</a> <a href="#tool-MichaelDeBoey" title="Tools">🔧</a> <a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=MichaelDeBoey" title="Tests">⚠️</a> <a href="#translation-MichaelDeBoey" title="Translation">🌍</a></td>
     <td align="center"><a href="https://www.justindorfman.com"><img src="https://avatars1.githubusercontent.com/u/398230?v=4" width="100px;" alt=""/><br /><sub><b>Justin Dorfman</b></sub></a><br /><a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=jdorfman" title="Documentation">📖</a></td>
     <td align="center"><a href="http://arvigeus.github.com"><img src="https://avatars2.githubusercontent.com/u/4872470?v=4" width="100px;" alt=""/><br /><sub><b>Nikolay Stoynov</b></sub></a><br /><a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=arvigeus" title="Documentation">📖</a></td>
     <td align="center"><a href="https://www.andrewm.codes"><img src="https://avatars1.githubusercontent.com/u/18423853?v=4" width="100px;" alt=""/><br /><sub><b>Andrew Mason</b></sub></a><br /><a href="https://github.com/kentcdodds/eslint-config-kentcdodds/commits?author=andrewmcodes" title="Documentation">📖</a></td>
@@ -180,7 +180,6 @@ Thanks goes to these people ([emoji key][emojis]):
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors][all-contributors] specification.
