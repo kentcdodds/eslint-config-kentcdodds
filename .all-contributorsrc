@@ -94,7 +94,9 @@
       "contributions": [
         "code",
         "doc",
-        "tool"
+        "tool",
+        "test",
+        "translation"
       ]
     },
     {
