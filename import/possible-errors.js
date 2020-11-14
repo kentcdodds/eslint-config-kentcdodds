@@ -12,4 +12,12 @@ module.exports = {
     'import/no-self-import': 'error',
     'import/no-useless-path-segments': 'off',
   },
+  overrides: [
+    {
+      files: ['**/*.ts?(x)'],
+      rules: {
+        'import/no-unresolved': 'off', // ts(2307)
+      },
+    },
+  ],
 }
