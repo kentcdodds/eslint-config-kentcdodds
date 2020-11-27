@@ -82,6 +82,7 @@ module.exports = {
     ...(hasJestDom
       ? {
           'jest-dom/prefer-checked': 'error',
+          'jest-dom/prefer-in-document': 'error',
           'jest-dom/prefer-empty': 'error',
           'jest-dom/prefer-enabled-disabled': 'error',
           'jest-dom/prefer-focus': 'error',

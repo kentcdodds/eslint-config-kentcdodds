@@ -26,7 +26,7 @@ module.exports = {
         'prefer-rest-params': 'error', // ts provides better types with rest args over arguments
         'prefer-spread': 'error', // ts transpiles spread to apply, so no need for manual apply
 
-        'no-duplicate-imports': 'error',
+        'no-duplicate-imports': 'off',
         '@typescript-eslint/no-duplicate-imports': 'error',
 
         'no-useless-constructor': 'off',
