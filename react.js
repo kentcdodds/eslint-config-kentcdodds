@@ -77,7 +77,7 @@ module.exports = {
     'react/jsx-uses-react': 'error',
     'react/jsx-uses-vars': 'error',
     'react/no-access-state-in-setstate': 'error',
-    'react/no-adjacent-inline-elements': 'warn',
+    'react/no-adjacent-inline-elements': 'off',
     'react/no-array-index-key': 'off', // sometimes you don't care about the issues or they don't apply
     'react/no-children-prop': 'off',
     'react/no-danger': 'off',

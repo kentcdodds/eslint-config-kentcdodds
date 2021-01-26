@@ -7,7 +7,7 @@ module.exports = {
     'no-await-in-loop': 'error',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
-    'no-console': 'error',
+    'no-console': 'off',
     'no-constant-condition': 'error',
     'no-control-regex': 'error',
     'no-debugger': 'error',

@@ -10,8 +10,7 @@ module.exports = {
     'prefer-destructuring': 'off', // nah, I like it, but not that much...
     'sort-imports': 'off',
 
-    camelcase: 'off',
-    'babel/camelcase': ['error', {properties: 'always'}],
+    'babel/camelcase': 'off',
 
     'new-cap': 'off',
     'babel/new-cap': [
