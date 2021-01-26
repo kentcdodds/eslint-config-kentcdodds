@@ -6,6 +6,7 @@ module.exports = {
     'no-dupe-class-members': 'error',
     'no-new-symbol': 'error',
     'no-this-before-super': 'error',
+    'no-unsafe-optional-chaining': 'error',
 
     'no-unused-expressions': 'off',
     'babel/no-unused-expressions': 'error',
