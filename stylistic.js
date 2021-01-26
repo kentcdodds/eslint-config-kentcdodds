@@ -1,7 +1,7 @@
 module.exports = {
   extends: ['./non-rules-config.js', 'prettier'],
   rules: {
-    camelcase: ['error', {properties: 'always'}],
+    camelcase: 'off', // annoying to disable...
     'capitalized-comments': 'off', // wHO CaRes?
     'consistent-this': 'off', // Too many use-cases for reassigning "this" to different values
     curly: ['error', 'multi-line'],
