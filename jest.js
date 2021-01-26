@@ -91,6 +91,7 @@ module.exports = {
           'jest-dom/prefer-to-have-style': 'error',
           'jest-dom/prefer-to-have-text-content': 'error',
           'jest-dom/prefer-to-have-value': 'error',
+          'jest-dom/prefer-to-have-class': 'error',
         }
       : null),
 
