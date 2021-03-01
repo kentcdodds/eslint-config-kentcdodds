@@ -25,13 +25,13 @@ module.exports = {
     'max-lines-per-function': ['error', 150],
     'max-nested-callbacks': ['error', 7],
     'max-params': ['error', 7],
-    'max-statements': ['error', 40],
+    'max-statements': 'off', // this becomes an obvious problem when it's actually a problem...
     'max-statements-per-line': ['error', {max: 1}],
     'multiline-comment-style': 'off', // this would be cool to get the fixer, but too strict.
     'new-cap': 'error',
     'no-array-constructor': 'error',
     'no-bitwise': 'error',
-    'no-continue': 'error',
+    'no-continue': 'off',
     'no-inline-comments': 'off',
     'no-lonely-if': 'error',
     'no-multi-assign': 'error', // it's handy, but harder to read
@@ -58,7 +58,6 @@ module.exports = {
   overrides: [
     {
       files: ['**/*.ts?(x)'],
-      extends: 'prettier/@typescript-eslint',
       rules: {
         'lines-between-class-members': 'off',
         '@typescript-eslint/lines-between-class-members': 'off',

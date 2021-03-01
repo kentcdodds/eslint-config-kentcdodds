@@ -1,5 +1,4 @@
 module.exports = {
-  extends: 'prettier/babel',
   parser: 'babel-eslint',
   env: {
     es6: true,

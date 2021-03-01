@@ -5,7 +5,7 @@ module.exports = {
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'class-methods-use-this': 'off', // three words: "componentDidMount" :)
-    complexity: ['error', 14],
+    complexity: ['error', 20],
     'consistent-return': 'error',
     'default-case': 'error',
     'default-case-last': 'error',
@@ -65,14 +65,14 @@ module.exports = {
     'no-useless-concat': 'error',
     'no-useless-escape': 'error',
     'no-useless-return': 'error',
-    'no-void': 'error',
+    'no-void': 'off',
     'no-warning-comments': ['error', {terms: ['fixme'], location: 'anywhere'}],
     'no-with': 'off',
     'prefer-named-capture-group': 'off', // maybe one day... But I'm not used to it yet.
     'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
     'prefer-regex-literals': 'off',
     radix: 'error',
-    'require-await': 'error', // if you don't need async, don't use async or return Promise.resolve...
+    'require-await': 'off',
     'require-unicode-regexp': 'off',
     'vars-on-top': 'error',
     yoda: 'error',
@@ -152,8 +152,7 @@ module.exports = {
           },
         ],
 
-        'require-await': 'off',
-        '@typescript-eslint/require-await': 'error',
+        '@typescript-eslint/require-await': 'off',
 
         '@typescript-eslint/array-type': 'off',
         '@typescript-eslint/await-thenable': 'error',
@@ -173,7 +172,10 @@ module.exports = {
         '@typescript-eslint/no-inferrable-types': 'off', // I personally prefer relying on inference where possible, but I don't want to lint for it.
         '@typescript-eslint/no-invalid-void-type': 'warn',
         '@typescript-eslint/no-misused-new': 'error',
-        '@typescript-eslint/no-misused-promises': 'warn',
+        '@typescript-eslint/no-misused-promises': [
+          'warn',
+          {checksVoidReturn: false},
+        ],
         '@typescript-eslint/no-namespace': 'error',
         '@typescript-eslint/no-require-imports': 'off', // sometimes you can't do it any other way
         '@typescript-eslint/no-this-alias': 'error',
@@ -193,13 +195,13 @@ module.exports = {
         '@typescript-eslint/prefer-optional-chain': 'error',
         '@typescript-eslint/prefer-readonly': 'off',
         '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
-        '@typescript-eslint/prefer-regexp-exec': 'error',
+        '@typescript-eslint/prefer-regexp-exec': 'off',
         '@typescript-eslint/prefer-string-starts-ends-with': 'error',
         '@typescript-eslint/prefer-ts-expect-error': 'error',
         '@typescript-eslint/promise-function-async': 'off',
         '@typescript-eslint/require-array-sort-compare': 'off',
         '@typescript-eslint/restrict-plus-operands': 'error',
-        '@typescript-eslint/restrict-template-expressions': 'error',
+        '@typescript-eslint/restrict-template-expressions': 'off',
         '@typescript-eslint/strict-boolean-expressions': 'off',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/triple-slash-reference': 'error',

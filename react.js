@@ -23,7 +23,6 @@ try {
 }
 
 module.exports = {
-  extends: ['prettier/react'],
   env: {
     browser: true,
   },
