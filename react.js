@@ -97,6 +97,7 @@ module.exports = {
     'react/no-unescaped-entities': 'warn',
     'react/no-unknown-property': 'error',
     'react/no-unsafe': 'warn', // if you need it there should be a comment explaining why
+    'react/no-unstable-nested-components': 'error',
     'react/no-unused-prop-types': 'error',
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
