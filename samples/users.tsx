@@ -2,7 +2,10 @@ import * as React from 'react'
 
 export default Users
 
-function Users({nameFilter}) {
+type Props = {
+  nameFilter: string
+}
+function Users({nameFilter}: Props) {
   const users = [
     {name: 'Janice', friends: ['Albert', 'Nancy'], id: 23},
   ].filter(({name}) => name.toLowerCase().includes(nameFilter))
