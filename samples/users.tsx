@@ -6,9 +6,10 @@ type Props = {
   nameFilter: string
 }
 function Users({nameFilter}: Props) {
-  const users = [
-    {name: 'Janice', friends: ['Albert', 'Nancy'], id: 23},
-  ].filter(({name}) => name.toLowerCase().includes(nameFilter))
+  const users = [{name: 'Janice', friends: ['Albert', 'Nancy'], id: 23}].filter(
+    ({name}) => name.toLowerCase().includes(nameFilter),
+  )
+
   return (
     <div className="user-list" id="users-section" data-testid="users">
       {users.map(user => (

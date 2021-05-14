@@ -102,7 +102,8 @@ for it.
   _eslint-import-resolver-webpack_)
 - `@typescript-eslint`:
   [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
-  and [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
+  and
+  [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
 
 ### Things to know
 
