@@ -3,6 +3,7 @@ const semver = require('semver')
 
 let oldestSupportedReactVersion = '16.5.2'
 
+let hasPropTypes = false
 try {
   const pkg = readPkgUp.sync({normalize: true})
   // eslint-disable-next-line prefer-object-spread
@@ -12,6 +13,7 @@ try {
     pkg.devDependencies,
     pkg.dependencies,
   )
+  hasPropTypes = allDeps.hasOwnProp('prop-types')
   oldestSupportedReactVersion = semver
     .validRange(allDeps.react)
     .replace(/[>=<|]/g, ' ')
@@ -40,13 +42,13 @@ module.exports = {
   rules: {
     'react/boolean-prop-naming': 'off',
     'react/button-has-type': 'off',
-    'react/default-props-match-prop-types': 'error',
+    'react/default-props-match-prop-types': hasPropTypes ? 'error' : 'off',
     'react/destructuring-assignment': 'off',
     'react/display-name': ['error', {ignoreTranspilerName: false}],
     'react/forbid-component-props': 'off',
     'react/forbid-dom-props': 'off',
     'react/forbid-elements': 'off',
-    'react/forbid-foreign-prop-types': 'error',
+    'react/forbid-foreign-prop-types': hasPropTypes ? 'error' : 'off',
     'react/forbid-prop-types': 'off',
     'react/function-component-definition': 'off',
     'react/jsx-boolean-value': 'off',
@@ -98,13 +100,13 @@ module.exports = {
     'react/no-unknown-property': 'error',
     'react/no-unsafe': 'warn', // if you need it there should be a comment explaining why
     'react/no-unstable-nested-components': ['error', {allowAsProps: true}],
-    'react/no-unused-prop-types': 'error',
+    'react/no-unused-prop-types': hasPropTypes ? 'error' : 'off',
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'off',
     'react/prefer-read-only-props': 'off',
     'react/prefer-stateless-function': 'off',
-    'react/prop-types': 'error',
+    'react/prop-types': hasPropTypes ? 'error' : 'off',
     'react/react-in-jsx-scope': 'error',
     'react/require-default-props': 'off', // sometimes the default value is undefined so that's fine...
     'react/require-optimization': 'off',

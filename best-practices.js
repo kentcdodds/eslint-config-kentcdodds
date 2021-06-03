@@ -105,6 +105,8 @@ module.exports = {
       rules: {
         'no-undef': 'off', // ts(2304)
 
+        'consistent-return': 'off', // in TS this is much less an issue
+
         'default-param-last': 'off',
         '@typescript-eslint/default-param-last': 'off',
 

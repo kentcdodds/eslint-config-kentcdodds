@@ -8,9 +8,11 @@ module.exports = {
     'import/namespace': 'error',
     'import/no-extraneous-dependencies': 'error',
     'import/no-named-as-default-member': 'error',
-    'import/no-cycle': 'warn',
     'import/no-self-import': 'error',
     'import/no-useless-path-segments': 'off',
+
+    // this rule is quite slow...
+    'import/no-cycle': 'off',
   },
   overrides: [
     {

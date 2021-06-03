@@ -40,6 +40,8 @@ module.exports = {
         '**/*.{spec,test}.+(js|ts)?(x)',
       ],
       rules: {
+        'react/display-name': 'off', // we don't need a display name in test files
+
         ...mapDeprecatedRules(['jest/no-expect-resolves']),
         'jest/consistent-test-it': 'off',
         'jest/expect-expect': 'off',

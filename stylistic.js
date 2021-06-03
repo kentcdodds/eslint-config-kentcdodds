@@ -22,7 +22,8 @@ module.exports = {
       'error',
       {max: 2500, skipBlankLines: false, skipComments: false},
     ],
-    'max-lines-per-function': ['error', 150],
+
+    'max-lines-per-function': 'off', // this becomes an obvious problem when it's actually a problem...
     'max-nested-callbacks': ['error', 7],
     'max-params': ['error', 7],
     'max-statements': 'off', // this becomes an obvious problem when it's actually a problem...
