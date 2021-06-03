@@ -97,9 +97,6 @@ for it.
   for rules regarding accessibility with JSX (_eslint-plugin-jsx-a11y_)
 - `react`: [React](https://www.npmjs.com/package/react) JS library
   (_eslint-plugin-react_)
-- `webpack`: [Webpack](https://npmjs.com/package/webpack) for the import plugin
-  to work with webpack overloaded imports/requires (_eslint-plugin-import_ and
-  _eslint-import-resolver-webpack_)
 - `@typescript-eslint`:
   [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
   and
