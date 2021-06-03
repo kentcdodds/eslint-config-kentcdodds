@@ -83,14 +83,6 @@ need to have the associated plugins installed to make things work. I recommend
 adding them as dependencies to your project if you're going to use the config
 for it.
 
-- `babel-module`:
-  [babel-plugin-module-resolver](https://www.npmjs.com/package/babel-plugin-module-resolver)
-  for the import plugin to work with the module-resolver babel plugin
-  (_eslint-plugin-import_ and _eslint-import-resolver-babel-module_)
-- `babel-react-require`:
-  [babel-plugin-react-require](https://www.npmjs.com/package/babel-plugin-react-require)
-  for when you're using the react-require babel plugin (should be used with
-  `"kentcdodds/react"` as well) (_eslint-plugin-react_)
 - `jest`: [jest](http://facebook.github.io/jest/) testing framework
 - `jsx-a11y`:
   [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
@@ -104,9 +96,9 @@ for it.
 
 ### Things to know
 
-- The default config uses `babel-eslint` to support stage features that ESLint
-  doesn't support and it opts to use the `eslint-plugin-babel` rules over the
-  ESLint rules to support rules for these features as well.
+- The default config uses `@babel/eslint-parser` to support stage features that
+  ESLint doesn't support and it opts to use the `@babel/eslint-plugin` rules
+  over the ESLint rules to support rules for these features as well.
 - All plugins needed for rules used by these configs are dependencies of this
   module so you don't have to install anything on your own.
 - The default config actually is composed of several configurations and you can
