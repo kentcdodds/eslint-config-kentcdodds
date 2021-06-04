@@ -9,6 +9,7 @@
     "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y/index.js",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react/index.js",
+    "find-new-rules:react-native": "eslint-find-rules --unused ./other/test/react-native/index.js",
     "lint": "eslint --config index.js .",
     "test": "npm-run-all --parallel lint find-new-rules",
     "validate": "npm-run-all --parallel lint test",
@@ -46,6 +47,7 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.11.0",
     "eslint-plugin-testing-library": "^4.6.0",
     "read-pkg-up": "^7.0.1",
     "semver": "^7.3.5"
