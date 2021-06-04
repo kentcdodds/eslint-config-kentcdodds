@@ -1,4 +1,4 @@
-const mapDeprecatedRules = deprecatedRules =>
+const disableRules = deprecatedRules =>
   deprecatedRules.reduce(
     (allRules, rule) => ({
       ...allRules,
@@ -7,4 +7,6 @@ const mapDeprecatedRules = deprecatedRules =>
     {},
   )
 
-module.exports = {mapDeprecatedRules}
+const mapDeprecatedRules = disableRules
+
+module.exports = {disableRules, mapDeprecatedRules}

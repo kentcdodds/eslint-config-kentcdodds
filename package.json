@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "find-new-rules": "npm-run-all --parallel find-new-rules:*",
-    "find-new-rules:jest": "echo \"Disabled... See: #98 --> eslint-find-rules --unused ./other/test/jest/index.js\"",
+    "find-new-rules:jest": "eslint-find-rules --unused ./other/test/jest/index.js",
     "find-new-rules:jsx-a11y": "eslint-find-rules --unused ./other/test/jsx-a11y/index.js",
     "find-new-rules:main": "eslint-find-rules --unused ./index.js",
     "find-new-rules:react": "eslint-find-rules --unused ./other/test/react/index.js",
