@@ -112,6 +112,7 @@ const rules = {
         'testing-library/prefer-explicit-assert': 'warn',
         'testing-library/prefer-find-by': 'error',
         'testing-library/prefer-presence-queries': 'error',
+        'testing-library/prefer-query-by-disappearance': 'error',
         'testing-library/prefer-screen-queries': 'error',
         'testing-library/prefer-user-event': 'error',
         'testing-library/prefer-wait-for': 'error',
