@@ -31,6 +31,7 @@ const rules = {
   'jest/consistent-test-it': 'off',
   'jest/expect-expect': 'off',
   'jest/lowercase-name': 'off',
+  'jest/max-nested-describe': 'error',
   'jest/no-alias-methods': 'off',
   'jest/no-commented-out-tests': 'warn',
   'jest/no-conditional-expect': 'error',

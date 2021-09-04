@@ -104,6 +104,7 @@ module.exports = {
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
     'react/prefer-es6-class': 'off',
+    'react/prefer-exact-props': 'off',
     'react/prefer-read-only-props': 'off',
     'react/prefer-stateless-function': 'off',
     'react/prop-types': hasPropTypes ? 'error' : 'off',
