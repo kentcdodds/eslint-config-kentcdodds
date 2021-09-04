@@ -33,10 +33,6 @@
   },
   "homepage": "https://github.com/kentcdodds/eslint-config-kentcdodds#readme",
   "dependencies": {
-    "@babel/core": "^7.16.5",
-    "@babel/eslint-parser": "^7.16.5",
-    "@babel/eslint-plugin": "^7.16.5",
-    "@babel/preset-react": "^7.16.5",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "eslint-config-prettier": "^8.3.0",

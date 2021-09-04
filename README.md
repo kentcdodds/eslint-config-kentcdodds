@@ -96,9 +96,6 @@ for it.
 
 ### Things to know
 
-- The default config uses `@babel/eslint-parser` to support stage features that
-  ESLint doesn't support and it opts to use the `@babel/eslint-plugin` rules
-  over the ESLint rules to support rules for these features as well.
 - All plugins needed for rules used by these configs are dependencies of this
   module so you don't have to install anything on your own.
 - The default config actually is composed of several configurations and you can
@@ -109,7 +106,7 @@ for it.
 
 ```javascript
 module.exports = {
-  extends: ['kentcdodds/es6', 'kentcdodds/import', 'kentcdodds/jest'],
+  extends: ['kentcdodds/import', 'kentcdodds/jest'],
   rules: {
     /* custom rules */
   },
