@@ -172,6 +172,7 @@ module.exports = {
     'no-unsafe-optional-chaining': 'error',
     'no-unused-expressions': 'off',
     'no-unused-labels': 'error',
+    'no-unused-private-class-members': 'error',
     'no-unused-vars': [
       'error',
       {
@@ -208,6 +209,7 @@ module.exports = {
     'prefer-exponentiation-operator': 'warn',
     'prefer-named-capture-group': 'off', // maybe one day... But I'm not used to it yet.
     'prefer-numeric-literals': 'error',
+    'prefer-object-has-own': 'error',
     'prefer-object-spread': 'warn',
     'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
     'prefer-regex-literals': 'off',
