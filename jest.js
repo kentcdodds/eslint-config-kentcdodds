@@ -57,7 +57,7 @@ const rules = {
   'jest/no-try-expect': 'error',
   'jest/prefer-called-with': 'error',
   'jest/prefer-expect-assertions': 'off',
-  'jest/prefer-expect-resolves': 'error',
+  'jest/prefer-expect-resolves': 'off',
   'jest/prefer-hooks-on-top': 'error',
   'jest/prefer-inline-snapshots': 'off',
   'jest/prefer-spy-on': 'off',
