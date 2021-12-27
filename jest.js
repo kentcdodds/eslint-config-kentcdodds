@@ -64,7 +64,7 @@ const rules = {
   'jest/prefer-strict-equal': 'off',
   'jest/prefer-to-be-null': 'off',
   'jest/prefer-to-be-undefined': 'off',
-  'jest/prefer-to-be': 'error',
+  'jest/prefer-to-be': 'off',
   'jest/prefer-to-contain': 'warn',
   'jest/prefer-to-have-length': 'warn',
   'jest/prefer-todo': 'warn',
