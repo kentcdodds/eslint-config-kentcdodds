@@ -68,7 +68,7 @@ const rules = {
   'jest/prefer-to-contain': 'warn',
   'jest/prefer-to-have-length': 'warn',
   'jest/prefer-todo': 'warn',
-  'jest/require-hook': 'error',
+  'jest/require-hook': 'off',
   'jest/require-to-throw-message': 'off',
   'jest/require-top-level-describe': 'off',
   'jest/unbound-method': 'off',
