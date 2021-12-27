@@ -80,6 +80,7 @@ module.exports = {
     'react/no-access-state-in-setstate': 'error',
     'react/no-adjacent-inline-elements': 'off',
     'react/no-array-index-key': 'off', // sometimes you don't care about the issues or they don't apply
+    'react/no-arrow-function-lifecycle': 'error',
     'react/no-children-prop': 'off',
     'react/no-danger': 'off',
     'react/no-danger-with-children': 'error',
@@ -88,8 +89,10 @@ module.exports = {
     'react/no-did-update-set-state': 'error',
     'react/no-direct-mutation-state': 'error',
     'react/no-find-dom-node': 'error',
+    'react/no-invalid-html-attribute': 'error',
     'react/no-is-mounted': 'error',
     'react/no-multi-comp': 'off',
+    'react/no-namespace': 'error',
     'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
@@ -100,6 +103,7 @@ module.exports = {
     'react/no-unknown-property': 'error',
     'react/no-unsafe': 'warn', // if you need it there should be a comment explaining why
     'react/no-unstable-nested-components': ['error', {allowAsProps: true}],
+    'react/no-unused-class-component-methods': 'error',
     'react/no-unused-prop-types': hasPropTypes ? 'error' : 'off',
     'react/no-unused-state': 'error',
     'react/no-will-update-set-state': 'error',
