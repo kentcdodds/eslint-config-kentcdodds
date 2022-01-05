@@ -1,5 +1,3 @@
-const {mapDeprecatedRules} = require('./utils')
-
 module.exports = {
   env: {
     browser: true,
@@ -11,9 +9,6 @@ module.exports = {
   },
   plugins: ['jsx-a11y'],
   rules: {
-    ...mapDeprecatedRules([
-      'jsx-a11y/label-has-for', // see label-has-associated-control
-    ]),
     'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'warn',
     'jsx-a11y/anchor-has-content': 'error',

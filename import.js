@@ -11,8 +11,6 @@ module.exports = {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css|styl)$'],
   },
   rules: {
-    'global-require': 'off', // disable because no need to have both!
-
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
