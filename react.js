@@ -54,7 +54,7 @@ module.exports = {
     'react/jsx-boolean-value': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
-      {props: 'never', children: 'ignore'},
+      {children: 'ignore', props: 'never'},
     ],
     'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
     'react/jsx-fragments': 'off',
@@ -63,8 +63,8 @@ module.exports = {
     'react/jsx-max-depth': 'off',
     'react/jsx-newline': 'off',
     'react/jsx-no-bind': 'off',
-    'react/jsx-no-constructed-context-values': 'off',
     'react/jsx-no-comment-textnodes': 'error',
+    'react/jsx-no-constructed-context-values': 'off',
     'react/jsx-no-duplicate-props': 'error',
     'react/jsx-no-literals': 'off',
     'react/jsx-no-script-url': 'error',
