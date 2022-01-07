@@ -10,12 +10,14 @@ const tsConfig = fs.existsSync('tsconfig.json')
 module.exports = {
   env: {
     browser: true,
+    es6: true,
     node: true,
   },
-  extends: ['prettier', './import.js', './es6.js'],
+  extends: ['prettier', './import.js'],
   rules: {
     'accessor-pairs': 'error',
     'array-callback-return': 'error',
+    'arrow-body-style': 'off',
     'block-scoped-var': 'error',
     camelcase: 'off', // annoying to disable...
     'capitalized-comments': 'off', // wHO CaRes?
@@ -23,6 +25,7 @@ module.exports = {
     complexity: ['error', 20],
     'consistent-return': 'error',
     'consistent-this': 'off', // Too many use-cases for reassigning "this" to different values
+    'constructor-super': 'error',
     curly: ['error', 'multi-line'],
     'default-case': 'error',
     'default-case-last': 'error',
@@ -66,9 +69,11 @@ module.exports = {
     'no-bitwise': 'error',
     'no-caller': 'error',
     'no-case-declarations': 'error',
+    'no-class-assign': 'error',
     'no-compare-neg-zero': 'error',
     'no-cond-assign': 'error',
     'no-console': 'off',
+    'no-const-assign': 'error',
     'no-constant-condition': 'error',
     'no-constructor-return': 'error',
     'no-continue': 'off',
@@ -77,9 +82,11 @@ module.exports = {
     'no-delete-var': 'error',
     'no-div-regex': 'error',
     'no-dupe-args': 'error',
+    'no-dupe-class-members': 'error',
     'no-dupe-else-if': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
+    'no-duplicate-imports': 'error',
     'no-else-return': 'off',
     'no-empty': 'error',
     'no-empty-character-class': 'error',
@@ -120,6 +127,7 @@ module.exports = {
     'no-new': 'error',
     'no-new-func': 'error',
     'no-new-object': 'error',
+    'no-new-symbol': 'error',
     'no-new-wrappers': 'error',
     'no-nonoctal-decimal-escape': 'error',
     'no-obj-calls': 'error',
@@ -132,7 +140,9 @@ module.exports = {
     'no-prototype-builtins': 'off',
     'no-redeclare': 'error',
     'no-regex-spaces': 'error',
+    'no-restricted-exports': 'off', // not applicable for a config preset (should be configured only in projects)
     'no-restricted-globals': ['error', 'event', 'fdescribe'],
+    'no-restricted-imports': 'off', // not applicable for a config preset (should be configured only in projects)
     'no-restricted-properties': 'off', // no ideas of what to disallow right now...
     'no-restricted-syntax': ['error', 'WithStatement'],
     'no-return-assign': 'error',
@@ -147,6 +157,7 @@ module.exports = {
     'no-sparse-arrays': 'error',
     'no-template-curly-in-string': 'error',
     'no-ternary': 'off',
+    'no-this-before-super': 'error',
     'no-throw-literal': 'error',
     'no-undef': 'error',
     'no-undef-init': 'error',
@@ -158,6 +169,7 @@ module.exports = {
     'no-unreachable-loop': 'error',
     'no-unsafe-finally': 'error',
     'no-unsafe-negation': 'error',
+    'no-unsafe-optional-chaining': 'error',
     'no-unused-expressions': 'off',
     'no-unused-labels': 'error',
     'no-unused-vars': [
@@ -173,28 +185,46 @@ module.exports = {
     'no-useless-backreference': 'error',
     'no-useless-call': 'error',
     'no-useless-catch': 'error',
+    'no-useless-computed-key': 'error',
     'no-useless-concat': 'error',
+    'no-useless-constructor': 'error',
     'no-useless-escape': 'error',
+    'no-useless-rename': 'error',
     'no-useless-return': 'error',
+    'no-var': 'error',
     'no-void': 'off',
     'no-warning-comments': ['error', {location: 'anywhere', terms: ['fixme']}],
     'no-with': 'off',
+    'object-shorthand': ['error', 'properties'], // methods are optional so you can specify a name if you want
     'one-var': ['error', {initialized: 'never', uninitialized: 'always'}],
     'operator-assignment': 'off', // readability on a case-by-case basis
     'padding-line-between-statements': 'off', // meh...
+    'prefer-arrow-callback': [
+      'error',
+      {allowNamedFunctions: true, allowUnboundThis: true},
+    ],
+    'prefer-const': 'error',
+    'prefer-destructuring': 'off', // nah, I like it, but not that much...
     'prefer-exponentiation-operator': 'warn',
     'prefer-named-capture-group': 'off', // maybe one day... But I'm not used to it yet.
+    'prefer-numeric-literals': 'error',
     'prefer-object-spread': 'warn',
     'prefer-promise-reject-errors': 'off', // maybe one day... Not sure I'm in...
     'prefer-regex-literals': 'off',
+    'prefer-rest-params': 'error',
+    'prefer-spread': 'error',
+    'prefer-template': 'error',
     radix: 'error',
     'require-atomic-updates': 'off',
     'require-await': 'off',
     'require-unicode-regexp': 'off',
+    'require-yield': 'error',
+    'sort-imports': 'off',
     'sort-keys': 'off',
     'sort-vars': 'off',
     'spaced-comment': 'off',
     strict: 'error',
+    'symbol-description': 'error',
     'use-isnan': 'error',
     'valid-typeof': 'error',
     'vars-on-top': 'error',
@@ -211,19 +241,27 @@ module.exports = {
       },
       plugins: ['@typescript-eslint'],
       rules: {
+        'constructor-super': 'off', // ts(2335) & ts(2377)
         'getter-return': 'off', // ts(2378)
+        'no-const-assign': 'off', // ts(2588)
         'no-dupe-args': 'off', // ts(2300)
         'no-dupe-keys': 'off', // ts(1117)
         'no-func-assign': 'off', // ts(2539)
         'no-import-assign': 'off', // ts(2539) & ts(2540)
+        'no-new-symbol': 'off', // ts(2588)
         'no-obj-calls': 'off', // ts(2349)
         'no-setter-return': 'off', // ts(2408)
+        'no-this-before-super': 'off', // ts(2376)
         'no-undef': 'off', // ts(2304)
         'no-unreachable': 'off', // ts(7027)
         'no-unsafe-negation': 'off', // ts(2365) & ts(2360) & ts(2358)
         'valid-typeof': 'off', // ts(2367)
 
         'consistent-return': 'off', // in TS this is much less an issue
+        'no-var': 'error', // TS transpiles let/const to var, so no need for vars any more
+        'prefer-const': 'error', // TS provides better types with const
+        'prefer-rest-params': 'error', // TS provides better types with rest args over arguments
+        'prefer-spread': 'error', // TS transpiles spread to apply, so no need for manual apply
 
         'default-param-last': 'off',
         '@typescript-eslint/default-param-last': 'off',
@@ -239,6 +277,12 @@ module.exports = {
 
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
+
+        'no-dupe-class-members': 'off',
+        '@typescript-eslint/no-dupe-class-members': 'off', // ts(2393) & ts(2300)
+
+        'no-duplicate-imports': 'off',
+        '@typescript-eslint/no-duplicate-imports': 'error',
 
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'off',
@@ -286,6 +330,9 @@ module.exports = {
             varsIgnorePattern: '^ignored',
           },
         ],
+
+        'no-useless-constructor': 'off',
+        '@typescript-eslint/no-useless-constructor': 'error',
 
         '@typescript-eslint/adjacent-overload-signatures': 'error',
         '@typescript-eslint/array-type': 'off',
