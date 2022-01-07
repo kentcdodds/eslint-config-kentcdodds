@@ -16,11 +16,11 @@ jobs:
     if: ${{ !contains(github.head_ref, 'all-contributors') }}
     strategy:
       matrix:
-        node: [10, 12, 14, 16]
+        node: [12.22.0, 12, 14.17.0, 14, 16.0.0, 16]
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.0
+        uses: styfle/cancel-workflow-action@0.9.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
@@ -50,7 +50,7 @@ jobs:
       github.ref) && github.event_name == 'push' }}
     steps:
       - name: 🛑 Cancel Previous Runs
-        uses: styfle/cancel-workflow-action@0.9.0
+        uses: styfle/cancel-workflow-action@0.9.1
 
       - name: ⬇️ Checkout repo
         uses: actions/checkout@v2
@@ -58,7 +58,7 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
@@ -68,7 +68,7 @@ jobs:
       - name: 🚀 Release
         uses: cycjimmy/semantic-release-action@v2
         with:
-          semantic_version: 17
+          semantic_version: 18
           branches: |
             [
               '+([0-9])?(.{+([0-9]),x}).x',

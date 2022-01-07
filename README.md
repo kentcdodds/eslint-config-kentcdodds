@@ -96,30 +96,17 @@ for it.
 
 ### Things to know
 
-- The default config uses `@babel/eslint-parser` to support stage features that
-  ESLint doesn't support and it opts to use the `@babel/eslint-plugin` rules
-  over the ESLint rules to support rules for these features as well.
 - All plugins needed for rules used by these configs are dependencies of this
   module so you don't have to install anything on your own.
 - The default config actually is composed of several configurations and you can
-  use those individually. These are the configs it's using:
-  `possible-errors.js`, `best-practices.js`, `stylistic.js`, `es6/index.js`, and
-  `import/index.js`. You can use each of these configs yourself if you want to
-  leave my own personal style out of it. Also, the `es6` and `import` configs
-  each have a `possible-errors.js`, `best-practices.js`, and `stylistic.js`
-  which they are composed of as well.
+  use those individually. You can use each of these configs yourself if you want
+  to leave my own personal style out of it.
 
-#### Example of highly customized config
+#### Example of customized config
 
 ```javascript
 module.exports = {
-  extends: [
-    'kentcdodds/possible-errors',
-    'kentcdodds/best-practices',
-    'kentcdodds/es6/possible-errors',
-    'kentcdodds/import',
-    'kentcdodds/jest',
-  ],
+  extends: ['kentcdodds/import', 'kentcdodds/jest'],
   rules: {
     /* custom rules */
   },

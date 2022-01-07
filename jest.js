@@ -1,6 +1,13 @@
 const readPkgUp = require('read-pkg-up')
 
-const {disableRules, mapDeprecatedRules} = require('./utils')
+const disableRules = deprecatedRules =>
+  deprecatedRules.reduce(
+    (allRules, rule) => ({
+      ...allRules,
+      [rule]: 'off',
+    }),
+    {},
+  )
 
 let hasJestDom = false
 let hasTestingLibrary = false
@@ -27,10 +34,8 @@ try {
 const rules = {
   'react/display-name': 'off', // we don't need a display name in test files
 
-  ...mapDeprecatedRules(['jest/no-expect-resolves']),
   'jest/consistent-test-it': 'off',
   'jest/expect-expect': 'off',
-  'jest/lowercase-name': 'off',
   'jest/max-nested-describe': 'error',
   'jest/no-alias-methods': 'off',
   'jest/no-commented-out-tests': 'warn',
@@ -53,17 +58,13 @@ const rules = {
   'jest/no-standalone-expect': 'off',
   'jest/no-test-prefixes': 'error',
   'jest/no-test-return-statement': 'off',
-  'jest/no-truthy-falsy': 'off',
-  'jest/no-try-expect': 'error',
   'jest/prefer-called-with': 'error',
   'jest/prefer-expect-assertions': 'off',
   'jest/prefer-expect-resolves': 'off',
   'jest/prefer-hooks-on-top': 'error',
-  'jest/prefer-inline-snapshots': 'off',
+  'jest/prefer-lowercase-title': 'off',
   'jest/prefer-spy-on': 'off',
   'jest/prefer-strict-equal': 'off',
-  'jest/prefer-to-be-null': 'off',
-  'jest/prefer-to-be-undefined': 'off',
   'jest/prefer-to-be': 'off',
   'jest/prefer-to-contain': 'warn',
   'jest/prefer-to-have-length': 'warn',
@@ -72,7 +73,7 @@ const rules = {
   'jest/require-to-throw-message': 'off',
   'jest/require-top-level-describe': 'off',
   'jest/unbound-method': 'off',
-  'jest/valid-describe': 'error',
+  'jest/valid-describe-callback': 'error',
   'jest/valid-expect': 'error',
   'jest/valid-expect-in-promise': 'error',
   'jest/valid-title': 'warn',
@@ -80,16 +81,16 @@ const rules = {
   ...(hasJestDom
     ? {
         'jest-dom/prefer-checked': 'error',
-        'jest-dom/prefer-in-document': 'error',
         'jest-dom/prefer-empty': 'error',
         'jest-dom/prefer-enabled-disabled': 'error',
         'jest-dom/prefer-focus': 'error',
+        'jest-dom/prefer-in-document': 'error',
         'jest-dom/prefer-required': 'error',
         'jest-dom/prefer-to-have-attribute': 'error',
+        'jest-dom/prefer-to-have-class': 'error',
         'jest-dom/prefer-to-have-style': 'error',
         'jest-dom/prefer-to-have-text-content': 'error',
         'jest-dom/prefer-to-have-value': 'error',
-        'jest-dom/prefer-to-have-class': 'error',
       }
     : null),
 
@@ -102,7 +103,7 @@ const rules = {
         'testing-library/no-await-sync-events': 'error',
         'testing-library/no-await-sync-query': 'error',
         'testing-library/no-container': 'error',
-        'testing-library/no-debug': 'error',
+        'testing-library/no-debugging-utils': 'error',
         'testing-library/no-dom-import': ['error', 'react'],
         'testing-library/no-manual-cleanup': 'error',
         'testing-library/no-node-access': 'error',
