@@ -1,6 +1,13 @@
 const readPkgUp = require('read-pkg-up')
 
-const {disableRules, mapDeprecatedRules} = require('./utils')
+const disableRules = deprecatedRules =>
+  deprecatedRules.reduce(
+    (allRules, rule) => ({
+      ...allRules,
+      [rule]: 'off',
+    }),
+    {},
+  )
 
 let hasJestDom = false
 let hasTestingLibrary = false
@@ -27,7 +34,6 @@ try {
 const rules = {
   'react/display-name': 'off', // we don't need a display name in test files
 
-  ...mapDeprecatedRules(['jest/no-expect-resolves']),
   'jest/consistent-test-it': 'off',
   'jest/expect-expect': 'off',
   'jest/lowercase-name': 'off',
