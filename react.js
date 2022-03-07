@@ -51,6 +51,8 @@ module.exports = {
     'react/forbid-foreign-prop-types': hasPropTypes ? 'error' : 'off',
     'react/forbid-prop-types': 'off',
     'react/function-component-definition': 'off',
+    'react/hook-use-state': 'off',
+    'react/iframe-missing-sandbox': 'warn',
     'react/jsx-boolean-value': 'off',
     'react/jsx-curly-brace-presence': [
       'warn',
