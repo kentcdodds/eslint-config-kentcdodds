@@ -16,7 +16,7 @@ jobs:
     if: ${{ !contains(github.head_ref, 'all-contributors') }}
     strategy:
       matrix:
-        node: [12.22.0, 12, 14.17.0, 14, 16.0.0, 16]
+        node: [12.22.0, 12, 14.17.0, 14, 16.0.0, 16, 18]
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
