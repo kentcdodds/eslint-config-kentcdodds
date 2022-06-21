@@ -1,6 +1,12 @@
 const readPkgUp = require('read-pkg-up')
 const semver = require('semver')
 
+/**
+ * @see https://github.com/eslint/eslint/issues/3458
+ * @see https://www.npmjs.com/package/@rushstack/eslint-patch
+ */
+require('@rushstack/eslint-patch/modern-module-resolution')
+
 let oldestSupportedReactVersion = '16.5.2'
 
 let hasPropTypes = false
