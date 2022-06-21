@@ -78,22 +78,6 @@ module.exports = {
 }
 ```
 
-**Note**: Due to [this bug](https://github.com/eslint/eslint/issues/3458) you
-need to have the associated plugins installed to make things work. I recommend
-adding them as dependencies to your project if you're going to use the config
-for it.
-
-- `jest`: [jest](http://facebook.github.io/jest/) testing framework
-- `jsx-a11y`:
-  [eslint-plugin-jsx-a11y](https://github.com/evcohen/eslint-plugin-jsx-a11y)
-  for rules regarding accessibility with JSX (_eslint-plugin-jsx-a11y_)
-- `react`: [React](https://www.npmjs.com/package/react) JS library
-  (_eslint-plugin-react_)
-- `@typescript-eslint`:
-  [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
-  and
-  [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin).
-
 ### Things to know
 
 - All plugins needed for rules used by these configs are dependencies of this
