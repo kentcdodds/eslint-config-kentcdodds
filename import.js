@@ -17,6 +17,7 @@ module.exports = {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css|styl)$'],
   },
   rules: {
+    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
@@ -37,6 +38,7 @@ module.exports = {
     'import/no-deprecated': 'warn', // this is an in progress rule
     'import/no-duplicates': 'error',
     'import/no-dynamic-require': 'off',
+    'import/no-empty-named-blocks': 'error',
     'import/no-extraneous-dependencies': 'error',
     'import/no-import-module-exports': 'error',
     'import/no-internal-modules': 'off',
