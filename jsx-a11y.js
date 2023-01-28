@@ -17,6 +17,7 @@ module.exports = {
   rules: {
     'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'warn',
+    'jsx-a11y/anchor-ambiguous-text': 'warn',
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': 'error',
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
@@ -37,6 +38,7 @@ module.exports = {
     'jsx-a11y/media-has-caption': 'warn',
     'jsx-a11y/mouse-events-have-key-events': 'error',
     'jsx-a11y/no-access-key': 'error',
+    'jsx-a11y/no-aria-hidden-on-focusable': 'error',
     'jsx-a11y/no-autofocus': 'off', // I know what I'm doing... I think...
     'jsx-a11y/no-distracting-elements': 'error',
     'jsx-a11y/no-interactive-element-to-noninteractive-role': 'warn',
@@ -46,6 +48,7 @@ module.exports = {
     'jsx-a11y/no-onchange': 'off',
     'jsx-a11y/no-redundant-roles': 'error',
     'jsx-a11y/no-static-element-interactions': 'off',
+    'jsx-a11y/prefer-tag-over-role': 'error',
     'jsx-a11y/role-has-required-aria-props': 'error',
     'jsx-a11y/role-supports-aria-props': 'error',
     'jsx-a11y/scope': 'error',
