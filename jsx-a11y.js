@@ -17,7 +17,7 @@ module.exports = {
   rules: {
     'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'warn',
-    'jsx-a11y/anchor-ambiguous-text': 'off',
+    'jsx-a11y/anchor-ambiguous-text': 'warn',
     'jsx-a11y/anchor-has-content': 'error',
     'jsx-a11y/anchor-is-valid': 'error',
     'jsx-a11y/aria-activedescendant-has-tabindex': 'error',
