@@ -17,7 +17,7 @@ module.exports = {
     'import/ignore': ['node_modules', '.json$', '.(scss|less|css|styl)$'],
   },
   rules: {
-    'import/consistent-type-specifier-style': ['error', 'prefer-top-level'],
+    'import/consistent-type-specifier-style': ['error', 'prefer-inline'],
     'import/default': 'error',
     'import/dynamic-import-chunkname': 'off',
     'import/export': 'error',
