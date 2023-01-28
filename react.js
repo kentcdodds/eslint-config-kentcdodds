@@ -102,7 +102,7 @@ module.exports = {
     'react/no-is-mounted': 'error',
     'react/no-multi-comp': 'off',
     'react/no-namespace': 'error',
-    'react/no-object-type-as-default-prop': 'error',
+    'react/no-object-type-as-default-prop': 'off',
     'react/no-redundant-should-component-update': 'error',
     'react/no-render-return-value': 'error',
     'react/no-set-state': 'off',
