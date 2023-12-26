@@ -16,7 +16,8 @@ jobs:
     if: ${{ !contains(github.head_ref, 'all-contributors') }}
     strategy:
       matrix:
-        node: [12.22.0, 12, 14.17.0, 14, 16.0.0, 16, 18]
+        node: [18, 20]
+        typescript-version: [^4.0.0, ^5.0.0]
     runs-on: ubuntu-latest
     steps:
       - name: 🛑 Cancel Previous Runs
@@ -34,6 +35,9 @@ jobs:
         uses: bahmutov/npm-install@v1
         with:
           useLockFile: false
+
+      - name: 🆃 Setup TypeScript
+        run: npm i typescript@${{ matrix.typescript-version }}
 
       - name: ▶️ Run validate script
         run: npm run validate
@@ -58,7 +62,7 @@ jobs:
       - name: ⎔ Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: 📥 Download deps
         uses: bahmutov/npm-install@v1
