@@ -137,7 +137,7 @@ module.exports = {
     'no-new-symbol': 'error',
     'no-new-wrappers': 'error',
     'no-nonoctal-decimal-escape': 'error',
-    'no-object-constructor': 'off',
+    'no-object-constructor': 'error',
     'no-obj-calls': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
