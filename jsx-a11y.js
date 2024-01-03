@@ -15,7 +15,6 @@ module.exports = {
   },
   plugins: ['jsx-a11y'],
   rules: {
-    'jsx-a11y/accessible-emoji': 'error',
     'jsx-a11y/alt-text': 'warn',
     'jsx-a11y/anchor-ambiguous-text': 'warn',
     'jsx-a11y/anchor-has-content': 'error',
@@ -45,7 +44,6 @@ module.exports = {
     'jsx-a11y/no-noninteractive-element-interactions': 'warn',
     'jsx-a11y/no-noninteractive-element-to-interactive-role': 'warn',
     'jsx-a11y/no-noninteractive-tabindex': 'off',
-    'jsx-a11y/no-onchange': 'off',
     'jsx-a11y/no-redundant-roles': 'error',
     'jsx-a11y/no-static-element-interactions': 'off',
     'jsx-a11y/prefer-tag-over-role': 'error',

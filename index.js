@@ -54,7 +54,6 @@ module.exports = {
     ],
     'init-declarations': 'off',
     'line-comment-position': 'off',
-    'lines-between-class-members': 'off',
     'logical-assignment-operators': 'warn',
     'max-classes-per-file': 'off',
     'max-depth': ['error', 4],
@@ -66,7 +65,6 @@ module.exports = {
     'max-nested-callbacks': ['error', 7],
     'max-params': ['error', 7],
     'max-statements': 'off', // this becomes an obvious problem when it's actually a problem...
-    'max-statements-per-line': ['error', {max: 1}],
     'multiline-comment-style': 'off', // this would be cool to get the fixer, but too strict.
     'new-cap': 'error',
     'no-alert': 'error',
@@ -94,7 +92,7 @@ module.exports = {
     'no-dupe-else-if': 'error',
     'no-dupe-keys': 'error',
     'no-duplicate-case': 'error',
-    'no-duplicate-imports': 'error',
+    'no-duplicate-imports': 'off', // turned off in favor of `import/no-duplicates`
     'no-else-return': 'off',
     'no-empty': 'error',
     'no-empty-character-class': 'error',
@@ -136,10 +134,10 @@ module.exports = {
     'no-new': 'error',
     'no-new-func': 'error',
     'no-new-native-nonconstructor': 'error',
-    'no-new-object': 'error',
     'no-new-symbol': 'error',
     'no-new-wrappers': 'error',
     'no-nonoctal-decimal-escape': 'error',
+    'no-object-constructor': 'error',
     'no-obj-calls': 'error',
     'no-octal': 'error',
     'no-octal-escape': 'error',
@@ -156,7 +154,6 @@ module.exports = {
     'no-restricted-properties': 'off', // no ideas of what to disallow right now...
     'no-restricted-syntax': ['error', 'WithStatement'],
     'no-return-assign': 'error',
-    'no-return-await': 'error',
     'no-script-url': 'error',
     'no-self-assign': 'error',
     'no-self-compare': 'error',
@@ -209,7 +206,6 @@ module.exports = {
     'object-shorthand': ['error', 'properties'], // methods are optional so you can specify a name if you want
     'one-var': ['error', {initialized: 'never', uninitialized: 'always'}],
     'operator-assignment': 'off', // readability on a case-by-case basis
-    'padding-line-between-statements': 'off', // meh...
     'prefer-arrow-callback': [
       'error',
       {allowNamedFunctions: true, allowUnboundThis: true},
@@ -234,10 +230,10 @@ module.exports = {
     'sort-imports': 'off',
     'sort-keys': 'off',
     'sort-vars': 'off',
-    'spaced-comment': 'off',
     strict: 'error',
     'symbol-description': 'error',
     'use-isnan': 'error',
+    'unicode-bom': ['error', 'never'],
     'valid-typeof': 'error',
     'vars-on-top': 'error',
     yoda: 'error',
@@ -284,17 +280,11 @@ module.exports = {
         'init-declarations': 'off',
         '@typescript-eslint/init-declarations': 'off',
 
-        'lines-between-class-members': 'off',
-        '@typescript-eslint/lines-between-class-members': 'off',
-
         'no-array-constructor': 'off',
         '@typescript-eslint/no-array-constructor': 'error',
 
         'no-dupe-class-members': 'off',
         '@typescript-eslint/no-dupe-class-members': 'off', // ts(2393) & ts(2300)
-
-        'no-duplicate-imports': 'off',
-        '@typescript-eslint/no-duplicate-imports': 'error',
 
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'off',
@@ -373,7 +363,6 @@ module.exports = {
         '@typescript-eslint/no-extraneous-class': 'error', // stay away from classes when you can
         '@typescript-eslint/no-floating-promises': 'warn', // not a bad rule, but can be annoying
         '@typescript-eslint/no-for-in-array': 'error',
-        '@typescript-eslint/no-implicit-any-catch': 'warn',
         '@typescript-eslint/no-inferrable-types': 'off', // I personally prefer relying on inference where possible, but I don't want to lint for it.
         '@typescript-eslint/no-invalid-void-type': 'warn',
         '@typescript-eslint/no-misused-new': 'error',
@@ -384,7 +373,6 @@ module.exports = {
         '@typescript-eslint/no-namespace': 'error',
         '@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
         '@typescript-eslint/no-non-null-assertion': 'error',
-        '@typescript-eslint/no-parameter-properties': 'error', // yeah, I don't like this feature
         '@typescript-eslint/no-require-imports': 'off', // sometimes you can't do it any other way
         '@typescript-eslint/no-this-alias': 'error',
         '@typescript-eslint/no-type-alias': 'off',
@@ -401,6 +389,7 @@ module.exports = {
         '@typescript-eslint/no-unsafe-return': 'off', // seems like an ok idea, but it failed on a regular React Component
         '@typescript-eslint/no-var-requires': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'off',
+        '@typescript-eslint/parameter-properties': 'error',
         '@typescript-eslint/prefer-as-const': 'error',
         '@typescript-eslint/prefer-enum-initializers': 'error', // makes total sense
         '@typescript-eslint/prefer-for-of': 'off', // I prefer for of, but I don't want to lint for it
